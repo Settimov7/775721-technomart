@@ -18,14 +18,9 @@
       <!-- Форма поиска по сайту -->
     </form>
 
-    <section class="markers">
-      <a class="markers-link" href="markers.html">Закладки:0</a>
-    </section>
-
-    <section class="cart">
-      <a class="cart-link" href="cart.html">Корзина:0</a>
-      <a class="order-link" href="order.html">Оформить заказ</a>
-    </section>
+    <a class="markers-link" href="markers.html">Закладки:0</a>
+    <a class="cart-link" href="cart.html">Корзина:0</a>
+    <a class="order-link" href="order.html">Оформить заказ</a>
 
     <h1 class="title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 
@@ -73,37 +68,49 @@
   </header>
 
   <main class="container">
-    <section class="materials">
-      <b>Материалы</b>
-      <a class="button" href="materials.html">на любой вкус</a>
-    </section>
+    <section class="promo-block">
+      <ul class="categories-list">
+        <li class="item">
+          <b>Материалы</b>
+          <a class="button" href="materials.html">на любой вкус</a>
+        </li>
+        <li class="item">
+          <b>Инструмент</b>
+          <a class="button" href="tools.html">на все случаи</a>
+        </li>
+        <li class="item">
+          <b>Техника</b>
+          <a class="button" href="technique.html">для стройки</a>
+        </li>
+      </ul>
 
-    <section class="tools">
-      <b>Инструмент</b>
-      <a class="button" href="tools.html">на все случаи</a>
-    </section>
+      <ul class="main-slider">
+        <li class="slide">
+          <img src="img/drill.jpg" width="200" height="200" alt="Дрели. Соседям на радость.">
+          <!-- Изменить размеры картинок -->
+          <button class="button back">Назад</button>
+          <button class="button next">Вперед</button>
+          <a class="button" href="catalog.html">Открыть каталог</a>
+        </li>
+        <li class="slide">
+          <img src="img/perforator.jpg" width="200" height="200" alt="Перфораторы. Настоящие мужские игрушки.">
+          <!-- Изменить размеры картинок -->
+          <button class="button back">Назад</button>
+          <button class="button next">Вперед</button>
+          <a class="button" href="catalog.html">Открыть каталог</a>
+        </li>
+      </ul>
 
-    <section class="technique">
-      <b>Техника</b>
-      <a class="button" href="technique.html">для стройки</a>
-    </section>
-
-    <section class="sale">
-      <b>Скидки 50%</b>
-      <a class="button" href="special-offers.html">на 350 товаров</a>
-    </section>
-
-    <section class="delivery">
-      <b>Доставка</b>
-      <a class="button" href="delivery.html">Бесплатно</a>
-    </section>
-
-    <section class="main-slider">
-      <img src="img/drill.jpg" width="200" height="200" alt="Дрели. Соседям на радость.">
-      <!-- Изменить размеры картинок -->
-      <button class="button-back">Назад</button>
-      <button class="button-next">Вперед</button>
-      <a class="button" href="catalog.html">Открыть каталог</a>
+      <ul class="advantages-list">
+        <li class="item">
+          <b>Скидки 50%</b>
+          <a class="button" href="special-offers.html">на 350 товаров</a>
+        </li>
+        <li class="item">
+          <b>Доставка</b>
+          <a class="button" href="delivery.html">Бесплатно</a>
+        </li>
+      </ul>
     </section>
 
     <section class="popular-products">
@@ -116,9 +123,7 @@
             <!-- Изменить размеры картинок -->
           </a>
           <h3>
-            <a href="product.html">
-              <span class="title">Перфоратор BOSCH BFG 9000</span>
-            </a>
+            <a class="title" href="product.html">Перфоратор BOSCH BFG 9000</a>
           </h3>
           <p class="old-price">32500 Р.</p>
           <p class="price">25500 Р.</p>
@@ -131,9 +136,7 @@
             <!-- Изменить размеры картинок -->
           </a>
           <h3>
-            <a href="product.html">
-              <span class="title">Перфоратор BOSCH BFG 3000</span>
-            </a>
+            <a class="title" href="product.html">Перфоратор BOSCH BFG 3000</a>
           </h3>
           <p class="old-price">22500 Р.</p>
           <p class="price">15500 Р.</p>
@@ -146,9 +149,7 @@
             <!-- Изменить размеры картинок -->
           </a>
           <h3>
-            <a href="product.html">
-              <span class="title">Перфоратор BOSCH BFG 6000</span>
-            </a>
+            <a class="title" href="product.html">Перфоратор BOSCH BFG 6000</a>
           </h3>
           <p class="old-price">30500 Р.</p>
           <p class="price">25500 Р.</p>
@@ -161,9 +162,7 @@
             <!-- Изменить размеры картинок -->
           </a>
           <h3>
-            <a href="product.html">
-              <span class="title">Перфоратор BOSCH BFG 2000</span>
-            </a>
+            <a class="title" href="product.html">Перфоратор BOSCH BFG 2000</a>
           </h3>
           <p class="price">12500 Р.</p>
           <a class="buy" href="#">Купить</a>
@@ -225,22 +224,44 @@
         Хороший интернет-магазин отличается от плохого не только ценами!<br>
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
+
       <ul class="list">
         <li class="item">
-          <button>Доставка</button>
+          <a href="delivery.html">Доставка</a>
         </li>
         <li class="item">
-          <button>Гарантия</button>
+          <a href="guarantee.html">Гарантия</a>
         </li>
         <li class="item">
-          <button>Кредит</button>
+          <a href="credit.html">Кредит</a>
         </li>
       </ul>
-      <b>Доставка</b>
-      <p>
-        Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая
-        его на ваш этаж!
-      </p>
+
+      <ul class="description-list">
+        <li class="item">
+          <b>Доставка</b>
+          <p>
+            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая
+            его на ваш этаж!
+          </p>
+        </li>
+        <li class="item">
+          <b>Гарантия</b>
+          <p>
+            Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии.
+            Мы обменяем сгоревший товар на новый.
+            Дом уж восстановите как-нибудь сами.
+          </p>
+        </li>
+        <li class="item">
+          <b>Кредит</b>
+          <p>
+            Залезть в долговую яму стало проще!
+            Кредитные консультанты придут к вам на помощь.
+          </p>
+          <a class="button" href="credit.html">Отправить заявку</a>
+        </li>
+      </ul>
     </section>
 
     <section class="about-company">
@@ -333,7 +354,7 @@
 
     <section class="copyright">
       <p>
-        © 2010-2018 Компания "Техномарт"<br>
+        &copy; 2010-2018 Компания "Техномарт"<br>
         Все права защищены
       </p>
     </section>
