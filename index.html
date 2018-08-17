@@ -10,10 +10,11 @@
   <header class="main-header">
     <a class="logo">Техномарт</a>
 
-    <form class="search">
-      <h2 class="hidden">Поиск по сайту</h2>
-      <!-- Форма поиска по сайту -->
+    <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+      <label class="visually-hidden" for="search-field">Поиск</label>
+      <input class="search-field" type="search" name="search" id="search-field" placeholder="Поиск:">
     </form>
+<!-- Как лучше сделать форму поиска? -->
 
     <div class="shopping">
       <a class="markers-link" href="markers.html">Закладки:0</a>
@@ -31,10 +32,10 @@
     <section class="user-navigation">
       <ul>
         <li>
-          <a class="login-link" href="login.html"></a>
+          <a class="login-link" href="login.html">Войти</a>
         </li>
         <li>
-          <a class="registration-link" href="registration.html"></a>
+          <a class="registration-link" href="registration.html">Регистрация</a>
         </li>
       </ul>
     </section>
@@ -87,15 +88,15 @@
         <li class="slide">
           <p class="title">Дрели</p>
           <p>Соседям на радость!</p>
-          <button class="button back">Назад</button>
-          <button class="button next">Вперед</button>
+          <button class="button back" type="button" >Назад</button>
+          <button class="button next" type="button" >Вперед</button>
           <a class="button" href="catalog.html">Открыть каталог</a>
         </li>
         <li class="slide">
           <p class="title">Перфораторы</p>
           <p>Настоящие мужские игрушки</p>
-          <button class="button back">Назад</button>
-          <button class="button next">Вперед</button>
+          <button class="button back" type="button">Назад</button>
+          <button class="button next" type="button" >Вперед</button>
           <a class="button" href="catalog.html">Открыть каталог</a>
         </li>
       </ul>
@@ -119,10 +120,8 @@
         <li class="product">
           <a href="product.html">
             <img src="img/BFG-9000.jpg" width="215" height="150" alt="Перфоратор BOSCH BFG 9000">
+            <h3>Перфоратор BOSCH BFG 9000</h3>
           </a>
-          <h3>
-            <a class="title" href="product.html">Перфоратор BOSCH BFG 9000</a>
-          </h3>
           <p class="old-price">32500 Р.</p>
           <p class="price">25500 Р.</p>
           <a class="buy" href="#">Купить</a>
@@ -131,10 +130,8 @@
         <li class="product">
           <a href="product.html">
             <img src="img/BFG-3000.jpg" width="215" height="150" alt="Перфоратор BOSCH BFG 3000">
+            <h3>Перфоратор BOSCH BFG 3000</h3>
           </a>
-          <h3>
-            <a class="title" href="product.html">Перфоратор BOSCH BFG 3000</a>
-          </h3>
           <p class="old-price">22500 Р.</p>
           <p class="price">15500 Р.</p>
           <a class="buy" href="#">Купить</a>
@@ -143,10 +140,8 @@
         <li class="product">
           <a href="product.html">
             <img src="img/BFG-6000.jpg" width="215" height="150" alt="Перфоратор BOSCH BFG 6000">
+            <h3>Перфоратор BOSCH BFG 6000</h3>
           </a>
-          <h3>
-            <a class="title" href="product.html">Перфоратор BOSCH BFG 6000</a>
-          </h3>
           <p class="old-price">30500 Р.</p>
           <p class="price">25500 Р.</p>
           <a class="buy" href="#">Купить</a>
@@ -155,10 +150,8 @@
         <li class="product">
           <a href="product.html">
             <img src="img/BFG-2000.jpg" width="215" height="150" alt="Перфоратор BOSCH BFG 2000">
+            <h3>Перфоратор BOSCH BFG 2000</h3>
           </a>
-          <h3>
-            <a class="title" href="product.html">Перфоратор BOSCH BFG 2000</a>
-          </h3>
           <p class="price">12500 Р.</p>
           <a class="buy" href="#">Купить</a>
           <a class="mark" href="#">В закладки</a>
@@ -234,14 +227,16 @@
 
       <ul class="description-list">
         <li class="item">
-          <b>Доставка</b>
+          <h3>Доставка</h3>
+          <!-- На мой взгляд тут лучше поставить h3, а не b -->
           <p>
             Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая
             его на ваш этаж!
           </p>
         </li>
         <li class="item">
-          <b>Гарантия</b>
+          <h3>Гарантия</h3>
+          <!-- На мой взгляд тут лучше поставить h3, а не b -->
           <p>
             Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии.
             Мы обменяем сгоревший товар на новый.
@@ -249,7 +244,8 @@
           </p>
         </li>
         <li class="item">
-          <b>Кредит</b>
+          <h3>Кредит</h3>
+          <!-- На мой взгляд тут лучше поставить h3, а не b -->
           <p>
             Залезть в долговую яму стало проще!
             Кредитные консультанты придут к вам на помощь.
@@ -289,10 +285,8 @@
         Вы можете забрать товар сами,<br>
         заехав в наш офис:
       </p>
-      <img src="img/small-map.jpg" width="300" height="158" alt="Месторасположение компании Техномарт">
-      <button class="help-us">
-        Заблудились? Напишите нам!
-      </button>
+      <img src="img/small-map.jpg" width="300" height="158" alt="Компании Техномарт находится по адресу: г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8">
+      <a class="button" href="#">Заблудились? Напишите нам!</a>
     </section>
   </main>
 
@@ -300,7 +294,6 @@
     <a class="logo">Техномарт</a>
 
     <div class="contacts">
-      <h2 class="hidden">Контакты</h2>
       <p class="adress">г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
       <a class="phone-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
     </div>
@@ -369,17 +362,25 @@
     </div>
   </footer>
 
-  <form class="modal write-us">
-    <h2 class="hidden">Обратная связь</h2>
-    <!-- Тут должна быть форма -->
-    <button class="close">X</button>
-  </form>
+  <section class="modal write-us">
+    <h2 class="visually-hidden">Обратная связь</h2>
+    <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
+      <label for="name-field">Ваше имя:</label>
+      <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+      <label for="email-field">Ваш e-mail:</label>
+      <input type="email" name="email" id="email-field" placeholder="email@example.com">
+      <label for="message-field">Текст письма</label>
+      <textarea name="message" id="message-field" rows="5" placeholder="В свободной форме"></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
 
-  <form class="modal map">
-    <h2 class="hidden">Как нас найти?</h2>
-    <!-- интерактивная карта -->
-    <button class="close">X</button>
-  </form>
+  <section class="modal map">
+    <h2 class="visually-hidden">Как нас найти?</h2>
+    <img src="/img/big-map.jpg" width="940" height="446" alt="Компании Техномарт находится по адресу: г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8">
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
 </body>
 
 </html>
