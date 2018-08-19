@@ -11,10 +11,11 @@
     <a class="logo">Техномарт</a>
 
     <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-      <label class="visually-hidden" for="search-field">Поиск</label>
-      <input class="search-field" type="search" name="search" id="search-field" placeholder="Поиск:">
+      <label class="visually-hidden">
+        <p>Поиск</p>>
+        <input class="search-field" type="search" name="search" placeholder="Поиск:">
+      </label>
     </form>
-<!-- Как лучше сделать форму поиска? -->
 
     <div class="shopping">
       <a class="markers-link" href="markers.html">Закладки:0</a>
@@ -71,15 +72,15 @@
     <section class="promo-block">
       <ul class="categories-list">
         <li class="item">
-          <b>Материалы</b>
+          <p>Материалы</p>
           <a class="button" href="materials.html">на любой вкус</a>
         </li>
         <li class="item">
-          <b>Инструмент</b>
+          <p>Инструмент</p>
           <a class="button" href="tools.html">на все случаи</a>
         </li>
         <li class="item">
-          <b>Техника</b>
+          <p>Техника</p>
           <a class="button" href="technique.html">для стройки</a>
         </li>
       </ul>
@@ -88,26 +89,26 @@
         <li class="slide">
           <p class="title">Дрели</p>
           <p>Соседям на радость!</p>
-          <button class="button back" type="button" >Назад</button>
-          <button class="button next" type="button" >Вперед</button>
+          <a class="button back" href="#">Назад</a>
+          <a class="button next" href="#" >Вперед</a>
           <a class="button" href="catalog.html">Открыть каталог</a>
         </li>
         <li class="slide">
           <p class="title">Перфораторы</p>
           <p>Настоящие мужские игрушки</p>
-          <button class="button back" type="button">Назад</button>
-          <button class="button next" type="button" >Вперед</button>
+          <a class="button back" href="#">Назад</a>
+          <a class="button next" href="#" >Вперед</a>
           <a class="button" href="catalog.html">Открыть каталог</a>
         </li>
       </ul>
 
       <ul class="advantages-list">
         <li class="item">
-          <b>Скидки 50%</b>
+          <p>Скидки 50%</p>
           <a class="button" href="special-offers.html">на 350 товаров</a>
         </li>
         <li class="item">
-          <b>Доставка</b>
+          <p>Доставка</p>
           <a class="button" href="delivery.html">Бесплатно</a>
         </li>
       </ul>
@@ -119,8 +120,8 @@
       <ul class="list">
         <li class="product">
           <a href="product.html">
-            <img src="img/BFG-9000.jpg" width="215" height="150" alt="Перфоратор BOSCH BFG 9000">
-            <h3>Перфоратор BOSCH BFG 9000</h3>
+            <img src="img/BFG-9000.jpg" width="215" height="150" alt="Перфоратор bosch bfg 9000">
+            <h3>Перфоратор bosch bfg 9000</h3>
           </a>
           <p class="old-price">32500 Р.</p>
           <p class="price">25500 Р.</p>
@@ -129,8 +130,8 @@
         </li>
         <li class="product">
           <a href="product.html">
-            <img src="img/BFG-3000.jpg" width="215" height="150" alt="Перфоратор BOSCH BFG 3000">
-            <h3>Перфоратор BOSCH BFG 3000</h3>
+            <img src="img/BFG-3000.jpg" width="215" height="150" alt="Перфоратор bosch bfg 3000">
+            <h3>Перфоратор bosch bfg 3000</h3>
           </a>
           <p class="old-price">22500 Р.</p>
           <p class="price">15500 Р.</p>
@@ -139,8 +140,8 @@
         </li>
         <li class="product">
           <a href="product.html">
-            <img src="img/BFG-6000.jpg" width="215" height="150" alt="Перфоратор BOSCH BFG 6000">
-            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <img src="img/BFG-6000.jpg" width="215" height="150" alt="Перфоратор bosch bfg 6000">
+            <h3>Перфоратор bosch bfg 6000</h3>
           </a>
           <p class="old-price">30500 Р.</p>
           <p class="price">25500 Р.</p>
@@ -149,8 +150,8 @@
         </li>
         <li class="product">
           <a href="product.html">
-            <img src="img/BFG-2000.jpg" width="215" height="150" alt="Перфоратор BOSCH BFG 2000">
-            <h3>Перфоратор BOSCH BFG 2000</h3>
+            <img src="img/BFG-2000.jpg" width="215" height="150" alt="Перфоратор bosch bfg 2000">
+            <h3>Перфоратор bosch bfg 2000</h3>
           </a>
           <p class="price">12500 Р.</p>
           <a class="buy" href="#">Купить</a>
@@ -228,7 +229,6 @@
       <ul class="description-list">
         <li class="item">
           <h3>Доставка</h3>
-          <!-- На мой взгляд тут лучше поставить h3, а не b -->
           <p>
             Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая
             его на ваш этаж!
@@ -236,7 +236,6 @@
         </li>
         <li class="item">
           <h3>Гарантия</h3>
-          <!-- На мой взгляд тут лучше поставить h3, а не b -->
           <p>
             Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии.
             Мы обменяем сгоревший товар на новый.
@@ -245,7 +244,6 @@
         </li>
         <li class="item">
           <h3>Кредит</h3>
-          <!-- На мой взгляд тут лучше поставить h3, а не b -->
           <p>
             Залезть в долговую яму стало проще!
             Кредитные консультанты придут к вам на помощь.
