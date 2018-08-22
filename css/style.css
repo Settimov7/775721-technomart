@@ -394,6 +394,12 @@ a {
     background-color: #f4f4f4;
 }
 
+.beige_background {
+    color: #000000;
+
+    background-color: #f7f3ec;
+}
+
 .form_write_us input,
 .form_write_us textarea {
     font-family: "PT Sans", "Arial", sans-serif;
@@ -441,7 +447,8 @@ a {
     background-color: #f2f6f8;
 }
 
-.catalog_filter h3 {
+.catalog_filter h3 ,
+.catalog_sort h3 {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -450,6 +457,23 @@ a {
     color: #000000;
 
     background-color: #f7f3ec;
+}
+
+.catalog_sort .item {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.3);
+
+    border-bottom: 1px dotted #ee3643;
+}
+
+.catalog_sort .current {
+    color: #ee3643;
+
+    border: none;
 }
 
 .catalog_filter fieldset {
@@ -497,18 +521,7 @@ a {
     background-color: #ffffff;
 }
 
-.pagination_list .item:first-child {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #ffffff;
-
-    background-color: #ee3643;
-}
-
-.pagination_list .item:first-child~.item a {
+.pagination_list a {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -517,6 +530,12 @@ a {
     color: #000000;
 
     background-color: #ffffff;
+}
+
+.pagination_list .current {
+    color: #ffffff;
+
+    background-color: #ee3643;
 }
 
 .category_description {
