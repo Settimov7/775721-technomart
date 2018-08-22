@@ -1,127 +1,110 @@
-body 
-{
-  margin: 0;
-  padding: 0;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
 
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 13px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #000000;
-
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 
-a 
-{
-  text-decoration: none;
+a {
+    text-decoration: none;
 }
 
-.main_header
-{
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 17px;
-  line-height: 17px;
-  font-weight: 400;
-  color: #000000;
+.main_header {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #000000;
 
-  background-color: #f3f7f9;
+    background-color: #f3f7f9;
 }
 
-.header_top
-{
-  line-height: 18px;
-  color: #ffffff;
+.header_top {
+    line-height: 18px;
+    color: #ffffff;
 
-  background-color: #293449;
+    background-color: #293449;
 }
 
-.header_top .logo
-{
-  font-size: 24px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #ffffff;
+.header_top .logo {
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
 
-  background-color: #ee3643;
+    background-color: #ee3643;
 }
 
-.search_form input[type="search"]
-{
-  font: inherit;
-  color: #ffffff;
+.search_form input[type="search"] {
+    font: inherit;
+    color: #ffffff;
 
-  background: inherit;
-  border: none;
+    background: inherit;
+    border: none;
 }
 
-.search_form input[type="search"]::placeholder
-{
-  color: #ffffff;
-  opacity: 1;
+.search_form input[type="search"]::placeholder {
+    color: #ffffff;
+    opacity: 1;
 }
 
-.search_form input[type="search"]:-ms-input-placeholder
-{
-  color: #ffffff;
+.search_form input[type="search"]:-ms-input-placeholder {
+    color: #ffffff;
 }
 
-.search_form input[type="search"]::-ms-input-placeholder
-{
-  color: #ffffff;
+.search_form input[type="search"]::-ms-input-placeholder {
+    color: #ffffff;
 }
 
-.shopping a
-{
-  color: #ffffff;
+.shopping a {
+    color: #ffffff;
 }
 
-.shopping a:last-child
-{
-  color: #ffffff;
+.shopping a:last-child {
+    color: #ffffff;
 
-  background-color: #63a63e;
+    background-color: #63a63e;
 }
 
-.main_header .title 
-{
-  font-size: 16px;
-  line-height: 23px;
-  font-weight: 400;
-  font-style: italic; 
-  color: #ee3643;
+.main_header .title {
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+    font-style: italic;
+    color: #ee3643;
 }
 
-.contacts .phone
-{
-  font-size: 21px;
-  line-height: 21px;
-  color: #ee3643;
+.contacts .phone {
+    font-size: 21px;
+    line-height: 21px;
+    color: #ee3643;
 
-  border: 3px solid #ffffff;
+    border: 3px solid #ffffff;
 }
 
-.contacts .adress
-{
-  font-size: 14px;
-  line-height: 24px;
-  color: #32425c;
+.contacts .adress {
+    font-size: 14px;
+    line-height: 24px;
+    color: #32425c;
 }
 
-.user_navigation a
-{
-  font-size: 21px;
-  line-height: 21px;
-  color: #000000;
+.user_navigation a {
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
 
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 
-.main_navigation a
-{
-  color: #ffffff;
+.main_navigation a {
+    color: #ffffff;
 
-  background-color: #32425c;
+    background-color: #32425c;
 }
 
 .user_navigation ul,
@@ -137,489 +120,421 @@ a
 .catalog_sort ul,
 .catalog .list,
 .pagination_list,
-.catalog_filter ul
-{
-  list-style: none;
+.catalog_filter ul {
+    list-style: none;
 }
 
-.button
-{
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  text-align: center;
-  vertical-align: middle;
-  text-transform: uppercase;
-  color: #ffffff;
+.button {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #ffffff;
 
-  background-color: #ff5357;
-  border: none;
+    background-color: #ff5357;
+    border: none;
 }
 
-.categories_list p,
-.advantages_list p
-{
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 700;
-  color: #ffffff;
+.promo_list p {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #ffffff;
 }
 
-.categories_list a,
-.advantages_list a
-{
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #ffffff;
+.promo_list a {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
 
-  background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
-.categories_list li:first-child
-{
-  background-color: #ffbf47;
+.categories li:first-child {
+    background-color: #ffbf47;
 }
 
-.categories_list li:nth-child(2)
-{
-  background-color: #3bbce3;
+.categories li:nth-child(2) {
+    background-color: #3bbce3;
 }
 
-.categories_list li:last-child
-{
-  background-color: #dc91d8;
+.categories li:last-child {
+    background-color: #dc91d8;
 }
 
-.slide
-{
-  color: #ffffff;
+.slide {
+    color: #ffffff;
 
-  background-color: #000000;
+    background-color: #000000;
 }
 
-.advantages_list li:first-child
-{
-  background-color: #8ed78f;
+.advantages li:first-child {
+    background-color: #8ed78f;
 }
 
-.advantages_list li:last-child
-{
-  background-color: #ffc047;
+.advantages li:last-child {
+    background-color: #ffc047;
 }
 
+.header {
+    color: #32425c;
 
-.block_header
-{
-  color: #32425c;
-
-  background-color: #f9f5f0;
+    background-color: #f9f5f0;
 }
 
-.block_header h2
-{
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #32425c;
+.header h2 {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #32425c;
 }
 
-.product_title
-{
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 700;
-  color: #000000;
+.product_title {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #000000;
 }
 
-.old_price
-{
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: 700;
-  color: #a9a9a9;
-  text-decoration: line-through;
+.old_price {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #a9a9a9;
+    text-decoration: line-through;
 }
 
-.price
-{
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: 700;
-  color: #ffffff;
+.price {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #ffffff;
 
-  background-color: #ee3643;
+    background-color: #ee3643;
 }
 
-.buy
-{
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #ffffff;
+.buy {
+    color: #ffffff;
 
-  background-color: #63a63e;
+    background-color: #63a63e;
 }
 
-.mark
-{
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #32425c;
+.mark {
+    color: #32425c;
 
-  background-color: #ffffff;
-  border: 3px solid #63a63e;
+    background-color: #ffffff;
+    border: 3px solid #63a63e;
 }
 
 .popular_products .item,
-.catalog .item
-{
-  border: 1px solid #eaeaea;
+.catalog .item {
+    border: 1px solid #eaeaea;
 }
 
-.manufacturer
-{
-  border: 1px solid #eaeaea;
+.manufacturer {
+    border: 1px solid #eaeaea;
 }
 
-.services
-{
-  color: #000000;
+.services {
+    color: #000000;
 
-  background-color: #f4f8f9;
+    background-color: #f4f8f9;
 }
 
-.block_title
-{
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 400;
-  text-transform: uppercase;
+.block_title {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
-.services_list li:first-child
-{
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 21px;
-  line-height: 30px;
-  font-weight: 700;
-  color: #32425c;
+.services_list li:first-child {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #32425c;
 
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 .services_list li:nth-child(2),
-.services_list li:last-child
-{
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 21px;
-  line-height: 30px;
-  font-weight: 700;
-  color: #ffffff;
+.services_list li:last-child {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #ffffff;
 
-  background-color: #32425c;
+    background-color: #32425c;
 }
 
-.services_list a
-{
-  color: inherit;
+.services_list a {
+    color: inherit;
 }
 
-.description_list h3
-{
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  color: #32425c;
+.description_list h3 {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #32425c;
 }
 
-.transport_companies_list
-{
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 400;
-  color: #000000;
+.transport_companies_list {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000000;
 }
 
-.main_footer
-{
-  color: white;
+.main_footer {
+    color: white;
 
-  background-color: #32425c;
+    background-color: #32425c;
 }
 
-.main_footer .logo
-{
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #ffffff;
+.main_footer .logo {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
 
-  background-color: #ee3643;
+    background-color: #ee3643;
 }
 
-.main_footer .footer_contacts
-{
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #f3f7f9;
+.main_footer .footer_contacts {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #f3f7f9;
 }
 
-.footer_contacts .phone
-{
-  color: inherit;
+.footer_contacts .phone {
+    color: inherit;
 }
 
-.navigation li
-{
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #f3f7f9;
+.navigation li {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #f3f7f9;
 }
 
-.navigation li:nth-child(5) ~ li
-{
-  color: #ffd180;
+.navigation li:nth-child(5)~li {
+    color: #ffd180;
 }
 
-.navigation a
-{
-  color: inherit;
+.navigation a {
+    color: inherit;
 }
 
-.footer_bottom
-{
-  color: #ffffff;
+.footer_bottom {
+    color: #ffffff;
 
-  background-color: #293449;
+    background-color: #293449;
 }
 
-.copyright
-{
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
+.copyright {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
 }
 
-.feedback
-{
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
+.feedback {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
 }
 
-.developed_by
-{
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
+.developed_by {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
 }
 
 .feedback a,
-.developed_by a
-{
-  color: #ffd180;
+.developed_by a {
+    color: #ffd180;
 }
 
-.write_us
-{
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #000000;
+.write_us {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
 
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 
-.gray_background
-{
-  color: #000000;
+.gray_background {
+    color: #000000;
 
-  background-color:#f4f4f4;
+    background-color: #f4f4f4;
 }
 
 .form_write_us input,
-.form_write_us textarea
-{
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #000000;
+.form_write_us textarea {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
 
-  border: 2px solid #dee3e4;
+    border: 2px solid #dee3e4;
 }
 
 .form_write_us input::placeholder,
-.form_write_us textarea::placeholder
-{
-  color: #a9a9a9;
-  opacity: 1;
+.form_write_us textarea::placeholder {
+    color: #a9a9a9;
+    opacity: 1;
 }
 
 .form_write_us input:-ms-input-placeholder,
-.form_write_us textarea:-ms-input-placeholder
-{
-  color: #a9a9a9;
+.form_write_us textarea:-ms-input-placeholder {
+    color: #a9a9a9;
 }
 
 .search_form input::-ms-input-placeholder,
-.search_form textarea::-ms-input-placeholder
-{
-  color: #a9a9a9;
+.search_form textarea::-ms-input-placeholder {
+    color: #a9a9a9;
 }
 
-.breadcrumbs a
-{
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #000000;
+.breadcrumbs a {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
 }
 
-.catalog_title
-{
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #32425c;
+.catalog_title {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #32425c;
 
-  background-color: #f2f6f8;
+    background-color: #f2f6f8;
 }
 
-.catalog_filter h3
-{
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #000000;
+.catalog_filter h3 {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
 
-  background-color: #f7f3ec;
+    background-color: #f7f3ec;
 }
 
-.catalog_filter fieldset
-{
-  border: none;
+.catalog_filter fieldset {
+    border: none;
 }
 
-.catalog_filter legend
-{
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 17px;
-  line-height: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #000000;
+.catalog_filter legend {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
 }
 
-.catalog_filter .filter_option
-{
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #000000;
+.catalog_filter .filter_option {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
 }
 
-.catalog_filter input[type="number"]
-{
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #000000;
+.catalog_filter input[type="number"] {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
 
-  background-color: #f7f3ec;
-  border: none;
+    background-color: #f7f3ec;
+    border: none;
 }
 
-.catalog_filter button[type="submit"]
-{
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #000000;
+.catalog_filter button[type="submit"] {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
 
-  border: 1px solid #e5e5e5;
-  background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
 }
 
-.pagination_list .item:first-child
-{
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #ffffff;
+.pagination_list .item:first-child {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
 
-  background-color: #ee3643;
+    background-color: #ee3643;
 }
 
-.pagination_list .item:first-child ~ .item a
-{
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #000000;
+.pagination_list .item:first-child~.item a {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
 
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 
-.category_description
-{
-  color: #000000;
+.category_description {
+    color: #000000;
 
-  background-color: #f2f6f8;
+    background-color: #f2f6f8;
 }
 
-.cart_success p
-{
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 400;
-  color: #000000;
+.cart_success p {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #000000;
 }
 
-.cart_success .back
-{
-  color: #000000;
-  
-  background: #ffffff;
+.cart_success .back {
+    color: #000000;
+
+    background-color: #ffffff;
 }
