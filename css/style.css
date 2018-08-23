@@ -74,11 +74,17 @@ a {
     color: #ffffff;
 }
 
-.search_form input[type="search"]:hover,
-.search_form input[type="search"]:focus {
+.search_form input[type="search"]:hover {
     color: #ffffff;
 
     background-color: #212a3a;
+}
+
+.search_form input[type="search"]:focus {
+    color: #000000;
+
+    background-color: #ffffff;
+    outline: none;
 }
 
 .shopping a {
@@ -139,13 +145,15 @@ a {
     color: #32425c;
 }
 
-.user_navigation a {
+.user_navigation .item {
     font-size: 21px;
     line-height: 21px;
     color: #000000;
 
     background-color: #ffffff;
 }
+
+
 
 .main_navigation a {
     color: #ffffff;
@@ -166,29 +174,52 @@ a {
     background-color: #1d2739;
 }
 
-.user_navigation a:hover,
-.user_navigation a:focus {
+.user_navigation .item:hover,
+.user_navigation .item:focus {
     color: #ee3643;
 }
 
-.user_navigation a:active {
+.user_navigation .item:active {
     color: rgba(0, 0, 0, 0.3)
 }
 
-.user_navigation ul,
-.main_navigation ul,
-.promo_block ul,
-.popular_products .list,
-.popular_manufacturers .list,
-.services .services_list,
-.services .description_list,
-.transport_companies_list,
-.main_footer ul,
-.breadcrumbs,
-.catalog_sort ul,
-.catalog .list,
-.pagination_list,
-.catalog_filter ul {
+.user_name {
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.user_name a:first-child {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.user_name a:first-child:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.user_profile .user_menu {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    text-decoration: underline;
+    color: #32425c;
+}
+
+.user_profile .user_menu:hover,
+.user_profile .user_menu:focus {
+    color: #ee3643;
+}
+
+.user_profile .user_menu:active {
+    color: rgba(50, 66, 92, 0.3);
+}
+
+.list {
     list-style: none;
 }
 
@@ -369,8 +400,7 @@ a {
     border: 3px solid rgba(50, 66, 92, 0.3);
 }
 
-.popular_products .item,
-.catalog .item {
+.product {
     border: 1px solid #eaeaea;
 }
 
@@ -493,41 +523,25 @@ a {
     background-color: #293449;
 }
 
-.copyright {
+.footer_bottom {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
 }
 
-.feedback {
-    font-family: "Cuprum", "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 400;
-}
-
-.developed_by {
-    font-family: "Cuprum", "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 400;
-}
-
-.feedback a,
-.developed_by a {
+.footer_bottom .link
+{
     color: #ffd180;
 }
 
-.feedback a:hover,
-.feedback a:focus,
-.developed_by a:hover,
-.developed_by a:focus {
+
+.footer_bottom .link:hover,
+.footer_bottom .link:focus {
     text-decoration: underline;
 }
 
-.feedback a:active,
-.developed_by a:active {
+.footer_bottom .link:active {
     text-decoration: none;
     color: #ee3643;
 }
@@ -554,8 +568,8 @@ a {
     background-color: #f7f3ec;
 }
 
-.form_write_us input,
-.form_write_us textarea {
+
+.form_write_us .form_field {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -565,20 +579,26 @@ a {
     border: 2px solid #dee3e4;
 }
 
-.form_write_us input::placeholder,
-.form_write_us textarea::placeholder {
+.form_write_us .form_field::placeholder {
     color: #a9a9a9;
     opacity: 1;
 }
 
-.form_write_us input:-ms-input-placeholder,
-.form_write_us textarea:-ms-input-placeholder {
+.form_write_us .form_field:-ms-input-placeholder {
     color: #a9a9a9;
 }
 
-.search_form input::-ms-input-placeholder,
-.search_form textarea::-ms-input-placeholder {
+.form_write_us .form_field::-ms-input-placeholder {
     color: #a9a9a9;
+}
+
+.form_write_us .form_field:hover {
+    border: 2px solid #b5b5b5;
+}
+
+.form_write_us .form_field:focus {
+    border: 2px solid #ee3643;
+    outline: none;
 }
 
 .breadcrumbs a {
@@ -601,8 +621,7 @@ a {
     background-color: #f2f6f8;
 }
 
-.catalog_filter h3 ,
-.catalog_sort h3 {
+.section_title {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;

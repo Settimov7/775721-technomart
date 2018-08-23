@@ -36,18 +36,34 @@
     </div>
 
     <section class="user_navigation">
-      <ul>
+      <!-- <ul class="list">
         <li>
-          <a href="login.html">Войти</a>
+          <a class="item" href="login.html">Войти</a>
         </li>
         <li>
-          <a href="registration.html">Регистрация</a>
+          <a class="item" href="registration.html">Регистрация</a>
         </li>
-      </ul>
+      </ul> -->
+
+      <div class="user_profile">
+        <div class="user_name">
+          <a href="#">Равшан Джамшутович</a>
+          <a href="#">Выход</a>
+        </div>
+
+        <ul class="list">
+          <li>
+            <a class="user_menu" href="#">Мои заказы</a>
+          </li>
+          <li>
+            <a class="user_menu" href="#">Личный кабинет</a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <nav class="main_navigation">
-      <ul>
+      <ul class="list">
         <li>
           <a href="index.html">Главная</a>
         </li>
@@ -74,7 +90,7 @@
   </header>
 
   <main class="container">
-    <ul class="breadcrumbs">
+    <ul class="list breadcrumbs">
       <li>
         <a href="index.html">Главная</a>
       </li>
@@ -92,7 +108,7 @@
     <h2 class="catalog_title">Перфораторы</h2>
 
     <section class="catalog_filter">
-      <h3>Фильтр</h3>
+      <h3 class="section_title">Фильтр</h3>
       <form class="form_filter" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Цена:</legend>
@@ -105,7 +121,7 @@
         
         <fieldset>
           <legend>Производители:</legend>
-          <ul>
+          <ul class="list">
             <li class="filter_option">
               <label>
                 <input class="visually_hidden" type="checkbox" name="bosch" checked>
@@ -141,7 +157,7 @@
 
         <fieldset>
           <legend>Питание:</legend>
-          <ul>
+          <ul class="list">
             <li class="filter_option">
               <label>
                 <input class="visually_hidden" type="radio" name="product_group" value="rechargeable">
@@ -162,8 +178,8 @@
 
     <section class="catalog_sort">
       <div class="beige_background"> 
-        <h3>Сортировка:</h3>
-        <ul>
+        <h3 class="section_title">Сортировка:</h3>
+        <ul class="list">
           <li>
             <a class="item current" href="#">По цене</a>
           </li>
@@ -174,7 +190,7 @@
             <a class="item" href="#">По функционалу</a>
           </li>
         </ul>
-        <ul>
+        <ul class="list">
           <li>
             <a class="button up" href="#">По возростанию</a>
             <a class="button down" href="#">По убыванию</a>
@@ -185,7 +201,7 @@
 
     <section class="catalog">
       <ul class="list">
-        <li class="item">
+        <li class="item product">
           <a class="product_title" href="product.html">
             <img src="img/BFG-3000.jpg" width="215" height="150" alt="Перфоратор bosch bfg 3000">
             <h3>Перфоратор bosch bfg 3000</h3>
@@ -195,7 +211,7 @@
           <a class="button buy" href="#">Купить</a>
           <a class="button mark" href="#">В закладки</a>
         </li>
-        <li class="item">
+        <li class="item product">
           <a class="product_title" href="product.html">
             <img src="img/BFG-6000.jpg" width="215" height="150" alt="Перфоратор bosch bfg 6000">
             <h3>Перфоратор bosch bfg 6000</h3>
@@ -205,7 +221,7 @@
           <a class="button buy" href="#">Купить</a>
           <a class="button mark" href="#">В закладки</a>
         </li>
-        <li class="item">
+        <li class="item product">
           <a class="product_title" href="product.html">
             <img src="img/BFG-2000.jpg" width="215" height="150" alt="Перфоратор bosch bfg 2000">
             <h3>Перфоратор bosch bfg 2000</h3>
@@ -214,7 +230,7 @@
           <a class="button buy" href="#">Купить</a>
           <a class="button mark" href="#">В закладки</a>
         </li>
-        <li class="item">
+        <li class="item product">
           <a class="product_title" href="product.html">
             <img src="img/BFG-3000.jpg" width="215" height="150" alt="Перфоратор bosch bfg 3000">
             <h3>Перфоратор bosch bfg 3000</h3>
@@ -224,7 +240,7 @@
           <a class="button buy" href="#">Купить</a>
           <a class="button mark" href="#">В закладки</a>
         </li>
-        <li class="item">
+        <li class="item product">
           <a class="product_title" href="product.html">
             <img src="img/BFG-6000.jpg" width="215" height="150" alt="Перфоратор bosch bfg 6000">
             <h3>Перфоратор bosch bfg 6000</h3>
@@ -234,7 +250,7 @@
           <a class="button buy" href="#">Купить</a>
           <a class="button mark" href="#">В закладки</a>
         </li>
-        <li class="item">
+        <li class="item product">
           <a class="product_title" href="product.html">
             <img src="img/BFG-2000.jpg" width="215" height="150" alt="Перфоратор bosch bfg 2000">
             <h3>Перфоратор bosch bfg 2000</h3>
@@ -243,7 +259,7 @@
           <a class="button buy" href="#">Купить</a>
           <a class="button mark" href="#">В закладки</a>
         </li>
-        <li class="item">
+        <li class="item product">
           <a class="product_title" href="product.html">
             <img src="img/BFG-3000.jpg" width="215" height="150" alt="Перфоратор bosch bfg 3000">
             <h3>Перфоратор bosch bfg 3000</h3>
@@ -253,7 +269,7 @@
           <a class="button buy" href="#">Купить</a>
           <a class="button mark" href="#">В закладки</a>
         </li>
-        <li class="item">
+        <li class="item product">
           <a class="product_title" href="product.html">
             <img src="img/BFG-6000.jpg" width="215" height="150" alt="Перфоратор bosch bfg 6000">
             <h3>Перфоратор bosch bfg 6000</h3>
@@ -263,7 +279,7 @@
           <a class="button buy" href="#">Купить</a>
           <a class="button mark" href="#">В закладки</a>
         </li>
-        <li class="item">
+        <li class="item product">
           <a class="product_title" href="product.html">
             <img src="img/BFG-2000.jpg" width="215" height="150" alt="Перфоратор bosch bfg 2000">
             <h3>Перфоратор bosch bfg 2000</h3>
@@ -273,7 +289,7 @@
           <a class="button mark" href="#">В закладки</a>
         </li>
       </ul>
-      <ul class="pagination_list">
+      <ul class="list pagination_list">
         <li>
           <a class="current">1</a>
         </li>
@@ -308,7 +324,7 @@
     </div>
 
     <nav class="navigation">
-      <ul>
+      <ul class="list">
         <li>
           <a class="item" href="about-company.html">Компания</a>
         </li>
@@ -348,27 +364,27 @@
       </div>
 
       <section class="social">
-        <ul>
+        <ul class="list">
           <li>
-            <a class="link vkontakte" href="#">Вконтакте</a>
+            <a class="vkontakte" href="#">Вконтакте</a>
           </li>
           <li>
-            <a class="link facebook" href="#">Facebook</a>
+            <a class="facebook" href="#">Facebook</a>
           </li>
           <li>
-            <a class="link instagram" href="#">Instagram</a>
+            <a class="instagram" href="#">Instagram</a>
           </li>
         </ul>
       </section>
 
       <div class="feedback">
         <p>Обратная связь:</p>
-        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <a class="link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </div>
 
       <div class="developed_by">
         <p>Разработано -</p>
-        <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+        <a class="link" href="https://htmlacademy.ru">htmlacademy.ru</a>
       </div>
     </div>
   </footer>

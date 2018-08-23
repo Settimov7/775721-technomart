@@ -36,18 +36,18 @@
     </div>
 
     <section class="user_navigation">
-      <ul>
+      <ul class="list">
         <li>
-          <a href="login.html">Войти</a>
+          <a class="item" href="login.html">Войти</a>
         </li>
         <li>
-          <a href="registration.html">Регистрация</a>
+          <a class="item" href="registration.html">Регистрация</a>
         </li>
       </ul>
     </section>
 
     <nav class="main_navigation">
-      <ul>
+      <ul class="list">
         <li>
           <a href="index.html">Главная</a>
         </li>
@@ -75,7 +75,7 @@
 
   <main class="container">
     <section class="promo_block">
-      <ul class="promo_list categories">
+      <ul class="list promo_list categories">
         <li>
           <p>Материалы</p>
           <a href="materials.html">на любой вкус</a>
@@ -90,7 +90,7 @@
         </li>
       </ul>
 
-      <ul class="main_slider">
+      <ul class="list main_slider">
         <li class="slide">
           <p>Дрели</p>
           <p>Соседям на радость!</p>
@@ -109,7 +109,7 @@
         </li>
       </ul>
 
-      <ul class="promo_list advantages">
+      <ul class="list promo_list advantages">
         <li>
           <p>Скидки 50%</p>
           <a href="special-offers.html">на 350 товаров</a>
@@ -128,7 +128,7 @@
       </div>
 
       <ul class="list">
-        <li class="item">
+        <li class="item product">
           <a class="product_title" href="product.html">
             <img src="img/BFG-9000.jpg" width="215" height="150" alt="Перфоратор bosch bfg 9000">
             <h3>Перфоратор bosch bfg 9000</h3>
@@ -138,7 +138,7 @@
           <a class="button buy" href="#">Купить</a>
           <a class="button mark" href="#">В закладки</a>
         </li>
-        <li class="item">
+        <li class="item product">
           <a class="product_title" href="product.html">
             <img src="img/BFG-3000.jpg" width="215" height="150" alt="Перфоратор bosch bfg 3000">
             <h3>Перфоратор bosch bfg 3000</h3>
@@ -148,7 +148,7 @@
           <a class="button buy" href="#">Купить</a>
           <a class="button mark" href="#">В закладки</a>
         </li>
-        <li class="item">
+        <li class="item product">
           <a class="product_title" href="product.html">
             <img src="img/BFG-6000.jpg" width="215" height="150" alt="Перфоратор bosch bfg 6000">
             <h3>Перфоратор bosch bfg 6000</h3>
@@ -158,7 +158,7 @@
           <a class="button buy" href="#">Купить</a>
           <a class="button mark" href="#">В закладки</a>
         </li>
-        <li class="item">
+        <li class="item product">
           <a class="product_title" href="product.html">
             <img src="img/BFG-2000.jpg" width="215" height="150" alt="Перфоратор bosch bfg 2000">
             <h3>Перфоратор bosch bfg 2000</h3>
@@ -227,7 +227,7 @@
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
 
-      <ul class="services_list">
+      <ul class="list services_list">
         <li>
           <a class="item current" href="delivery.html">Доставка</a>
         </li>
@@ -239,7 +239,7 @@
         </li>
       </ul>
 
-      <ul class="description_list">
+      <ul class="list description_list">
         <li>
           <h3>Доставка</h3>
           <p>
@@ -276,7 +276,7 @@
         Мы можем доставить ваш товар в самые отдаленные точки России!<br>
         Техномарт работает со многими транспортными компаниями:
       </p>
-      <ul class="transport_companies_list">
+      <ul class="list transport_companies_list">
         <li class="item">
           <p>Деловые линии</p>
         </li>
@@ -310,7 +310,7 @@
     </div>
 
     <nav class="navigation">
-      <ul>
+      <ul class="list">
         <li>
           <a class="item" href="about-company.html">Компания</a>
         </li>
@@ -350,27 +350,27 @@
       </div>
 
       <section class="social">
-        <ul>
+        <ul class="list">
           <li>
-            <a class="link vkontakte" href="#">Вконтакте</a>
+            <a class="vkontakte" href="#">Вконтакте</a>
           </li>
           <li>
-            <a class="link facebook" href="#">Facebook</a>
+            <a class="facebook" href="#">Facebook</a>
           </li>
           <li>
-            <a class="link instagram" href="#">Instagram</a>
+            <a class="instagram" href="#">Instagram</a>
           </li>
         </ul>
       </section>
 
       <div class="feedback">
         <p>Обратная связь:</p>
-        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <a class="link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </div>
 
       <div class="developed_by">
         <p>Разработано -</p>
-        <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+        <a class="link" href="https://htmlacademy.ru">htmlacademy.ru</a>
       </div>
     </div>
   </footer>
@@ -380,15 +380,15 @@
     <form class="form_write_us" action="https://echo.htmlacademy.ru" method="post">
       <label>
         <span>Ваше имя:</span>
-        <input type="text" name="name" placeholder="Имя Фамилия">
+        <input class="form_field" type="text" name="name" placeholder="Имя Фамилия">
       </label>
       <label>
         <span>Ваш e-mail:</span>
-        <input type="email" name="email" placeholder="email@example.com">
+        <input class="form_field" type="email" name="email" placeholder="email@example.com">
       </label>
       <label>
         <span>Текст письма</span>
-        <textarea name="message" rows="5" placeholder="В свободной форме"></textarea>
+        <textarea class="form_field" name="message" rows="5" placeholder="В свободной форме"></textarea>
       </label>
       <div class="gray_background"> 
         <button class="button" type="submit">Отправить</button>
