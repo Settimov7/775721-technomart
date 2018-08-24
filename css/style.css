@@ -747,3 +747,258 @@ a {
 
     background-color: #ffffff;
 }
+
+/* Сеточные стили */
+
+.main_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-bottom: 60px; */
+}
+
+.header_top {
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+html p,
+.list ,
+.title,
+.catalog_filter fieldset{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Как лучше обнулить отступы, которые добавляет браузер?  */
+
+.header_top .container {
+    display: flex;
+}
+
+.header_top .logo {
+    width: 220px;
+}
+
+.search_form {
+    width: 270px;
+}
+
+.shopping {
+    width: 450px;
+}
+
+.main_header .container {
+    display: flex;
+}
+
+.main_header .title {
+    width: 300px;
+}
+
+.main_header .contacts {
+    width: 270px;
+}
+
+.user_navigation {
+    width: 300px;
+}
+
+.promo_block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 59px;
+    margin-bottom: 53px;
+}
+
+.promo_list li {
+    width: 300px;
+}
+
+.promo_block .main_slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    width: 620px;
+}
+
+.promo_list.categories {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.promo_block .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.promo_list.advantages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popular_products .header {
+    margin-bottom: 20px;
+}
+
+.popular_products .list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.popular_products .product {
+    width: 220px;
+}
+
+.popular_manufacturers .header {
+    margin-bottom: 20px;
+}
+
+.popular_manufacturers .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.popular_manufacturers .manufacturer {
+    width: 220px;
+    margin-bottom: 20px;
+}
+
+.popular_manufacturers {
+    margin-bottom: 65px;
+}
+
+.services {
+    width: 100%;
+    margin-bottom: 77px;
+    padding-top: 63px;
+}
+
+.container.double_column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_company {
+    width: 540px;
+}
+
+.double_column .contacts {
+    width: 300px;
+    margin-bottom: 86px;
+}
+
+.main_footer {
+    width: 100%;
+}
+.main_footer .double_column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.double_column .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.main_footer .logo {
+    width: 220px;
+}
+
+.footer_contacts {
+    width: 330px;
+}
+
+.main_footer .navigation {
+    width: 550px;
+}
+
+.footer_bottom {
+    width: 100%;
+}
+
+.footer_bottom .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.social {
+    width: 160px;
+}
+
+.copyright {
+    width: 230px;
+}
+
+.feedback {
+    width: 140px;
+}
+
+.developed_by {
+    width: 140px;
+}
+
+.breadcrumbs {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.catalog_title {
+    margin-bottom: 20px;
+}
+
+.container.shop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog_filter {
+    width: 220px;
+}
+
+.products {
+    width: 700px;
+}
+
+.catalog_sort {
+    margin-bottom: 20px;
+}
+
+.catalog .list:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.catalog .product {
+    width: 220px;
+    margin-bottom: 20px;
+}
+
+.pagination_list {
+    margin-bottom: 60px;
+}
+
+.category_description {
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 73px;
+}
+
+.category_description .title {
+    margin-bottom: 35px;
+}
