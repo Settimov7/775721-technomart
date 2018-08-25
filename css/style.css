@@ -771,7 +771,7 @@ a {
 html p,
 .list ,
 .title,
-.catalog_filter fieldset{
+.catalog_filter fieldset {
     margin: 0px;
     padding: 0px;
 }
