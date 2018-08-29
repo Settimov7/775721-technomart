@@ -30,7 +30,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container middle">
       <h1 class="title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 
       <div class="contacts">
@@ -39,26 +39,24 @@
       </div>
 
       <section class="user_navigation">
-        <!-- <ul class="list">
+        <ul class="list visually_hidden">
           <li>
-            <a class="item" href="login.html">Войти</a>
+            <a class="item user_navigation_button login" href="login.html">Войти</a>
           </li>
           <li>
-            <a class="item" href="registration.html">Регистрация</a>
+            <a class="item user_navigation_button registration" href="registration.html">Регистрация</a>
           </li>
-        </ul> -->
+        </ul>
 
-        <div class="user_profile">
-          <div class="user_name">
-            <a href="#">Равшан Джамшутович</a>
-            <a href="#">Выход</a>
-          </div>
+        <div class="list user_profile">
+          <a class="user_name" href="#">Равшан Джамшутович</a>
+          <a class="logout" href="#"><span class="visually_hidden">Выход</span></a>
 
-          <ul class="list">
-            <li>
+          <ul class="list navigation_list">
+            <li class="user_navigation_item">
               <a class="user_menu" href="#">Мои заказы</a>
             </li>
-            <li>
+            <li class="user_navigation_item">
               <a class="user_menu" href="#">Личный кабинет</a>
             </li>
           </ul>
@@ -68,25 +66,25 @@
 
     <nav class="main_navigation">
       <ul class="list">
-        <li>
+        <li class="navigation_item">
           <a href="index.html">Главная</a>
         </li>
-        <li>
+        <li class="navigation_item">
           <a href="about-company.html">Компания</a>
         </li>
-        <li>
+        <li class="navigation_item">
           <a href="catalog.html">Каталог</a>
         </li>
-        <li>
+        <li class="navigation_item">
           <a href="news.html">Новости</a>
         </li>
-        <li>
+        <li class="navigation_item">
           <a href="special-offers.html">Спецпредложения</a>
         </li>
-        <li>
+        <li class="navigation_item">
           <a href="delivery.html">Доставка</a>
         </li>
-        <li>
+        <li class="navigation_item">
           <a href="contacts.html">Контакты</a>
         </li>
       </ul>
@@ -97,7 +95,7 @@
     <div class="container">
     <ul class="list breadcrumbs">
       <li>
-        <a href="index.html">Главная</a>
+        <a href="index.html"><span class="visually_hidden">Главная</span></a>
       </li>
       <li>
         <a href="catalog.html">Каталог</a>
@@ -118,12 +116,22 @@
         <form class="form_filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Цена:</legend>
-            <div class="double_range"></div>
-            <input type="number" name="min_price" value="0">
-            <span>-</span>
-            <input type="number" name="max_price" value="30000">
+            <div class="double_range">
+              <div class="range_controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range_toggle range_toggle_min"></div>
+                <div class="range_toggle range_toggle_max"></div>
+              </div>
+            </div>
+            <div class="price_controls">
+              <input type="number" name="min_price" value="0">
+              <span>—</span>
+              <input type="number" name="max_price" value="30000">
+            </div>
           </fieldset>
-          <!-- Пока не рассказывали как делать двойной range, поэтому временно оставлю div -->
+          
           
           <fieldset>
             <legend>Производители:</legend>
@@ -183,28 +191,40 @@
       </section>
 
       <div class="products">
-        <section class="catalog_sort">
-          <div class="beige_background"> 
+        <div class="beige_background">
+          <section class="catalog_sort">
             <h3 class="section_title title">Сортировка:</h3>
-            <ul class="list">
-              <li>
+            <ul class="list sort_function">
+              <li class="sort_item">
                 <a class="item current" href="#">По цене</a>
               </li>
-              <li>
+              <li class="sort_item">
                 <a class="item" href="#">По типу</a>
               </li>
-              <li>
+              <li class="sort_item">
                 <a class="item" href="#">По функционалу</a>
               </li>
             </ul>
-            <ul class="list">
-              <li>
-                <a class="button up" href="#">По возростанию</a>
-                <a class="button down" href="#">По убыванию</a>
+            <ul class="list sort_direction_list">
+              <li class="sort_direction sort_direction_up current">
+                <a href="#"><span class="visually_hidden">По возростанию</span>
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                  <polygon class="svg" fill="#231F20" points="5.5,0 0,10 11,10 "/>
+                  </svg>
+                </a>
+              </li>
+              <li class="sort_direction sort_direction_down">
+                <a href="#"><span class="visually_hidden">По убыванию</span>
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                  <polyline class="svg" fill="#231F20" points="5.5,10 0,0 11,0 "/>
+                  </svg>
+                </a>
               </li>
             </ul>
+          </section>
           </div>
-        </section>
 
         <section class="catalog">
           <ul class="list">
@@ -215,8 +235,10 @@
               </a>
               <p class="old_price">22500 Р.</p>
               <p class="price">15500 Р.</p>
-              <a class="button buy" href="#">Купить</a>
-              <a class="button mark" href="#">В закладки</a>
+              <div class="product_actions">
+                <a class="button buy" href="#">Купить</a>
+                <a class="button mark" href="#">В закладки</a>
+              </div>
             </li>
             <li class="item product">
               <a class="product_title" href="product.html">
@@ -225,8 +247,10 @@
               </a>
               <p class="old_price">30500 Р.</p>
               <p class="price">25500 Р.</p>
-              <a class="button buy" href="#">Купить</a>
-              <a class="button mark" href="#">В закладки</a>
+              <div class="product_actions">
+                <a class="button buy" href="#">Купить</a>
+                <a class="button mark" href="#">В закладки</a>
+              </div>
             </li>
             <li class="item product">
               <a class="product_title" href="product.html">
@@ -234,8 +258,10 @@
                 <h3 class="title">Перфоратор bosch bfg 2000</h3>
               </a>
               <p class="price">25500 Р.</p>
-              <a class="button buy" href="#">Купить</a>
-              <a class="button mark" href="#">В закладки</a>
+              <div class="product_actions">
+                <a class="button buy" href="#">Купить</a>
+                <a class="button mark" href="#">В закладки</a>
+              </div>
             </li>
             <li class="item product">
               <a class="product_title" href="product.html">
@@ -244,8 +270,10 @@
               </a>
               <p class="old_price">22500 Р.</p>
               <p class="price">15500 Р.</p>
-              <a class="button buy" href="#">Купить</a>
-              <a class="button mark" href="#">В закладки</a>
+              <div class="product_actions">
+                <a class="button buy" href="#">Купить</a>
+                <a class="button mark" href="#">В закладки</a>
+              </div>
             </li>
             <li class="item product">
               <a class="product_title" href="product.html">
@@ -254,8 +282,10 @@
               </a>
               <p class="old_price">30500 Р.</p>
               <p class="price">25500 Р.</p>
-              <a class="button buy" href="#">Купить</a>
-              <a class="button mark" href="#">В закладки</a>
+              <div class="product_actions">
+                <a class="button buy" href="#">Купить</a>
+                <a class="button mark" href="#">В закладки</a>
+              </div>
             </li>
             <li class="item product">
               <a class="product_title" href="product.html">
@@ -263,8 +293,10 @@
                 <h3 class="title">Перфоратор bosch bfg 2000</h3>
               </a>
               <p class="price">25500 Р.</p>
-              <a class="button buy" href="#">Купить</a>
-              <a class="button mark" href="#">В закладки</a>
+              <div class="product_actions">
+                <a class="button buy" href="#">Купить</a>
+                <a class="button mark" href="#">В закладки</a>
+              </div>
             </li>
             <li class="item product">
               <a class="product_title" href="product.html">
@@ -273,8 +305,10 @@
               </a>
               <p class="old_price">22500 Р.</p>
               <p class="price">15500 Р.</p>
-              <a class="button buy" href="#">Купить</a>
-              <a class="button mark" href="#">В закладки</a>
+              <div class="product_actions">
+                <a class="button buy" href="#">Купить</a>
+                <a class="button mark" href="#">В закладки</a>
+              </div>
             </li  class="title"> 
             <li class="item product">
               <a class="product_title" href="product.html">
@@ -283,8 +317,10 @@
               </a>
               <p class="old_price">30500 Р.</p>
               <p class="price">25500 Р.</p>
-              <a class="button buy" href="#">Купить</a>
-              <a class="button mark" href="#">В закладки</a>
+              <div class="product_actions">
+                <a class="button buy" href="#">Купить</a>
+                <a class="button mark" href="#">В закладки</a>
+              </div>
             </li>
             <li class="item product">
               <a class="product_title" href="product.html">
@@ -292,21 +328,23 @@
                 <h3 class="title">Перфоратор bosch bfg 2000</h3>
               </a>
               <p class="price">25500 Р.</p>
-              <a class="button buy" href="#">Купить</a>
-              <a class="button mark" href="#">В закладки</a>
+              <div class="product_actions">
+                <a class="button buy" href="#">Купить</a>
+                <a class="button mark" href="#">В закладки</a>
+              </div>
             </li>
           </ul>
           <ul class="list pagination_list">
-            <li>
+            <li class="pagination_list_item">
               <a class="current">1</a>
             </li>
-            <li>
+            <li class="pagination_list_item">
               <a href="#">2</a>
             </li>
-            <li>
+            <li class="pagination_list_item">
               <a href="#">3</a>
             </li>
-            <li>
+            <li class="pagination_list_item">
               <a href="#">Следующая</a>
             </li>
           </ul>
@@ -340,31 +378,31 @@
 
       <nav class="navigation">
         <ul class="list">
-          <li>
+          <li class="footer_navigation_item">
             <a class="item" href="about-company.html">Компания</a>
           </li>
-          <li>
+          <li class="footer_navigation_item">
             <a class="item" href="news.html">Новости</a>
           </li>
-          <li>
+          <li class="footer_navigation_item">
             <a class="item" href="catalog.html">Каталог</a>
           </li>
-          <li>
+          <li class="footer_navigation_item">
             <a class="item" href="delivery.html">Доставка</a>
           </li>
-          <li>
+          <li class="footer_navigation_item">
             <a class="item" href="contacts.html">Контакты</a>
           </li>
-          <li>
+          <li class="footer_navigation_item">
             <a class="item second_string" href="materials.html">Материалы</a>
           </li>
-          <li>
+          <li class="footer_navigation_item">
             <a class="item second_string" href="technique.html">Техника</a>
           </li>
-          <li>
+          <li class="footer_navigation_item">
             <a class="item second_string" href="tools.html">Инструмент</a>
           </li>
-          <li>
+          <li class="footer_navigation_item">
             <a class="item second_string" href="special-offers.html">Спецпредложения</a>
           </li>
         </ul>
@@ -383,13 +421,13 @@
         <section class="social">
           <ul class="list">
             <li>
-              <a class="vkontakte" href="#">Вконтакте</a>
+              <a class="vkontakte" href="#"><span class="visually_hidden">Вконтакте</span></a>
             </li>
             <li>
-              <a class="facebook" href="#">Facebook</a>
+              <a class="facebook" href="#"><span class="visually_hidden">Facebook</span></a>
             </li>
             <li>
-              <a class="instagram" href="#">Instagram</a>
+              <a class="instagram" href="#"><span class="visually_hidden">Instagram</span></a>
             </li>
           </ul>
         </section>
