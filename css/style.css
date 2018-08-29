@@ -1368,19 +1368,19 @@ html p,
 .popular_products .header {
     display: flex;
     justify-content: space-between;
-    /* align-items: baseline; */
     margin-bottom: 20px;
     padding: 25px;
     padding-left: 30px;
     padding-right: 24px;
 }
 
+.popular_products .title {
+    align-self: center;
+}
+
 .header .button {
     width: 253px;
 }
-
-/* Заголовок и кнопка не хотят выравниваться
-    по базовой линии.*/
 
 .popular_products .list {
     display: flex;
@@ -1511,11 +1511,14 @@ html p,
 .popular_manufacturers .header {
     display: flex;
     justify-content: space-between;
-    /* align-items: baseline; */
     margin-bottom: 20px;
     padding: 25px;
     padding-left: 30px;
     padding-right: 24px;
+}
+
+.popular_manufacturers .title {
+    align-self: center;
 }
 
 .popular_manufacturers .header {
@@ -1533,16 +1536,15 @@ html p,
     height: 145px;
     margin-bottom: 20px;
     box-sizing: border-box;
+}
 
-    text-align: center;
-    vertical-align: middle;
+.manufacturer img {
+    margin: 10px;
 }
 
 .popular_manufacturers {
     margin-bottom: 65px;
 }
-
-/* Как отцентровать изображения по вертикали? */
 
 .popular_manufacturers .manufacturer:hover,
 .popular_manufacturers .manufacturer:focus {
