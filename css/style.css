@@ -140,13 +140,19 @@ input[type="radio"].visually-hidden {
     opacity: 1;
 }
 
+/* .search_form input[type="search"]:focus::before {
+    background-color: red;
+    opacity: 1;
+    background-image: url("../img/icon-search-red.svg");
+} */
 /* .search_form:focus::before {
     background-color: red;
     opacity: 1;
     background-image: url("../img/icon-search-red.svg");
 } */
 
-/* Как сделать иконку в поле ввода? */
+/* Иконка спозиционирована абсолютно. :hover работает,
+     а :focus нет.  */
 
 .shopping {
     display: flex;
@@ -991,6 +997,10 @@ html p,
     justify-content: flex-end;
 }
 
+.user_navigation .hidden {
+    display: none;
+}
+
 .user_navigation_button {
     display: block;
     padding: 10px 25px;
@@ -1393,10 +1403,7 @@ html p,
     width: 220px;
 }
 
-.popular_products .product:last-child::after,
-.products .product:nth-child(3)::after,
-.products .product:nth-child(5)::after,
-.products .product:nth-child(7)::after {
+.product_new::after {
     content: "";
 
     position: absolute;
@@ -1607,7 +1614,7 @@ html p,
     height: 183px;
 }
 
-.description_slide:first-child::after {
+.description_slide.car_image::after {
     content: "";
 
     position: absolute;
@@ -1622,7 +1629,7 @@ html p,
     background-position: 0 0;
 }
 
-.description_slide:nth-child(2)::after {
+.description_slide.guarantee_image::after {
     content: "";
 
     position: absolute;
@@ -1637,7 +1644,7 @@ html p,
     background-position: 0 0;
 }
 
-.description_slide:last-child::after {
+.description_slide.credit_image::after {
     content: "";
 
     position: absolute;
@@ -1773,7 +1780,7 @@ html p,
     margin-right: 55px;
 }
 
-.footer_navigation_item:nth-child(5) a,
+.footer_navigation_item.last_item a,
 .footer_navigation_item:last-child a {
     margin-right: 0;
 }
@@ -2130,4 +2137,3 @@ html p,
 .category_description .title {
     margin-bottom: 35px;
 }
-

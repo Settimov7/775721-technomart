@@ -39,7 +39,7 @@
       </div>
 
       <section class="user_navigation">
-        <ul class="list visually_hidden">
+        <ul class="list hidden">
           <li>
             <a class="item user_navigation_button login" href="login.html">Войти</a>
           </li>
@@ -51,7 +51,8 @@
         <div class="list user_profile">
           <a class="user_name" href="#">Равшан Джамшутович</a>
           <a class="logout" href="#"><span class="visually_hidden">Выход</span></a>
-
+          <!-- А тут же нужно сохранить надпись выход, для доступности.
+                И поэтому используется visually_hidden. -->
           <ul class="list navigation_list">
             <li class="user_navigation_item">
               <a class="user_menu" href="#">Мои заказы</a>
@@ -252,7 +253,7 @@
                 <a class="button mark" href="#">В закладки</a>
               </div>
             </li>
-            <li class="item product">
+            <li class="item product product_new">
               <a class="product_title" href="product.html">
                 <img src="img/bfg-2000.jpg" width="215" height="150" alt="Перфоратор bosch bfg 2000">
                 <h3 class="title">Перфоратор bosch bfg 2000</h3>
@@ -275,7 +276,7 @@
                 <a class="button mark" href="#">В закладки</a>
               </div>
             </li>
-            <li class="item product">
+            <li class="item product product_new">
               <a class="product_title" href="product.html">
                 <img src="img/bfg-6000.jpg" width="215" height="150" alt="Перфоратор bosch bfg 6000">
                 <h3 class="title">Перфоратор bosch bfg 6000</h3>
@@ -298,7 +299,7 @@
                 <a class="button mark" href="#">В закладки</a>
               </div>
             </li>
-            <li class="item product">
+            <li class="item product product_new">
               <a class="product_title" href="product.html">
                 <img src="img/bfg-3000.jpg" width="215" height="150" alt="Перфоратор bosch bfg 3000">
                 <h3 class="title">Перфоратор bosch bfg 3000</h3>
@@ -390,7 +391,7 @@
           <li class="footer_navigation_item">
             <a class="item" href="delivery.html">Доставка</a>
           </li>
-          <li class="footer_navigation_item">
+          <li class="footer_navigation_item last_item">
             <a class="item" href="contacts.html">Контакты</a>
           </li>
           <li class="footer_navigation_item">
