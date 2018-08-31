@@ -1250,6 +1250,42 @@ html p,
     width: 195px;
 }
 
+.sliders_controls .slider_navigation {
+    display: flex;
+    justify-content: space-between;
+
+    position: absolute;
+    z-index: 2;
+    bottom: 36px;
+    left: 295px;
+
+    width: 30px;
+    height: 10px;
+}
+
+.slider_navigation a {
+    position: relative;
+    width: 10px;
+    height: 10px;
+
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.slider_navigation a.active::before {
+    content: "";
+
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    width: 6px;
+    height: 6px;
+
+    background-color: #ee3643;
+    border-radius: 50%;
+}
+
 .promo_list.categories {
     display: flex;
     justify-content: space-between;
