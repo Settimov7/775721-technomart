@@ -343,7 +343,7 @@ input[type="radio"].visually-hidden {
 .button {
     display: inline-block;
     width: 220px;
-    height: 38px;
+    /* height: 38px; */
     padding: 10px 0;
     box-sizing: border-box;
 
@@ -935,7 +935,6 @@ html p,
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    margin-bottom: 42px;
 }
 
 .main_header .title {
@@ -1163,6 +1162,7 @@ html p,
     position: relative;
 
     width: 620px;
+    height: 266px;
 }
 
 .main_slider_list li {
@@ -1306,6 +1306,7 @@ html p,
 }
 
 .promo_list p {
+    width: 137px;
     margin-bottom: 11px;
 }
 
@@ -1414,6 +1415,7 @@ html p,
 
 .popular_products .list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 20px;
 }
@@ -1421,6 +1423,7 @@ html p,
 .product {
     position: relative;
     width: 220px;
+
 }
 
 .product_new::after {
@@ -1515,7 +1518,7 @@ html p,
     position: relative;
 
     width: 123px;
-    height: 38px;
+    min-height: 38px;
     margin-left: 50px;
     margin-bottom: 21px;
     padding-top: 10px;
@@ -1626,7 +1629,6 @@ html p,
 .services_list .item {
     display: inline-block;
     width: 240px;
-    height: 61px;
     padding: 15px 0;
     padding-left: 23px;
     box-sizing: border-box;
@@ -2275,7 +2277,7 @@ html p,
 
 .pagination_list_item a {
     display: block;
-    width: 38px;
+    min-width: 38px;
     padding: 10px 0;
     margin-right: 10px;
     text-align: center;
@@ -2284,7 +2286,7 @@ html p,
 }
 
 .pagination_list_item:last-child a {
-    width: 140px;
+    min-width: 140px;
     margin: 0;
 }
 
