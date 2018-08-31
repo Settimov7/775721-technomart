@@ -2036,6 +2036,120 @@ html p,
     width: 140px;
 }
 
+.form_filter .manufacturer_checkbox {
+    position: relative;
+
+    padding-left: 34px;
+}
+
+.form_filter .filter_option {
+    margin-bottom: 17px;
+}
+
+.manufacturer_checkbox input[type="checkbox"] + .checkbox_indicator {
+    position: absolute;
+    top: -2px;
+    left: 0;
+
+    width: 23px;
+    height: 23px;
+
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.manufacturer_checkbox input[type="checkbox"]:hover + .checkbox_indicator {
+    background-image: url("../img/checkbox-off-hover.svg");
+}
+
+.manufacturer_checkbox input[type="checkbox"]:focus + .checkbox_indicator {
+    background-image: url("../img/checkbox-off-hover.svg");
+    border-color: #663d15;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.manufacturer_checkbox input[type="checkbox"]:disabled + .checkbox_indicator {
+    opacity: 0.3;
+}
+
+.manufacturer_checkbox input[type="checkbox"]:disabled ~ .checkbox_name {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.manufacturer_checkbox input[type="checkbox"]:checked + .checkbox_indicator {
+    width: 27px;
+    background-image: url("../img/checkbox-on.svg");
+}
+
+.manufacturer_checkbox input[type="checkbox"]:checked:hover + .checkbox_indicator {
+    width: 27px;
+    background-image: url("../img/checkbox-on-hover.svg");
+}
+
+.manufacturer_checkbox input[type="checkbox"] {
+    display: none
+}
+
+/*  Временный костыль!
+    При клике на checkbox появляется стандартный checkbox. visually_hidden не помогает.
+    Поэтому убрал с помощью display: none. Как можно его скрыть подругому?  */
+
+.form_filter .form_radio {
+    position: relative;
+
+    padding-left: 34px;
+}
+
+.form_radio input[type="radio"] + .radio_indicator {
+    position: absolute;
+    top: -2px;
+    left: 0;
+
+    width: 25px;
+    height: 25px;
+
+    background-image: url("../img/radio-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.form_radio input[type="radio"]:hover + .radio_indicator {
+    background-image: url("../img/radio-off-hover.svg");
+}
+
+.form_radio input[type="radio"]:focus + .radio_indicator {
+    background-image: url("../img/radio-off-hover.svg");
+    border-color: #663d15;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.form_radio input[type="radio"]:disabled + .radio_indicator {
+    opacity: 0.3;
+}
+
+.form_radio input[type="radio"]:disabled ~ .radio_name {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.form_radio input[type="radio"]:checked + .radio_indicator {
+    background-image: url("../img/radio-on.svg");
+}
+
+.form_radio input[type="radio"]:checked:hover + .radio_indicator {
+    width: 27px;
+    background-image: url("../img/radio-on-hover.svg");
+}
+
+.form_radio input[type="radio"] {
+    display: none
+}
+
+/*  Временный костыль!
+    Проблема описана выше.  */
+
 .catalog_sort .title {
     padding: 10px 19px;
 }
@@ -2233,7 +2347,7 @@ html p,
 
 .modal.cart_success {
     display: none;
-    
+
     width: 620px;
     height: 282px;
     margin-left: -310px;
