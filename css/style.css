@@ -288,12 +288,15 @@ input[type="radio"].visually-hidden {
 }
 
 .user_navigation .item:hover,
-.user_navigation .item:focus {
+.user_navigation .item:focus,
+.cart_success .back:hover,
+.cart_success .back:focus {
     color: #ee3643;
 }
 
 .user_navigation .item:active,
-.user_profile .user_name:active {
+.user_profile .user_name:active,
+.cart_success .back:active {
     color: rgba(0, 0, 0, 0.3)
 }
 
@@ -2127,4 +2130,147 @@ html p,
 
 .category_description .title {
     margin-bottom: 35px;
+}
+
+.modal {
+    position: fixed;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+
+    color: #000000;
+
+    background-color: #ffffff;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0 7px 0 0 #ff5257;
+}
+
+.modal.write_us {
+    display: none;
+
+    width: 620px;
+    height: 430px;
+    margin-left: -310px;
+    margin-top: -215px;
+    box-sizing: border-box;
+}
+
+.form_write_us .form_fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin: 50px 80px;
+    margin-bottom: 0;
+}
+
+.write_us input {
+    display: block;
+    width: 220px;
+    padding: 10px 15px;
+    margin-top: 12px;
+    margin-bottom: 19px;
+    box-sizing: border-box;
+
+    border-radius: 3px;
+}
+
+.write_us textarea {
+    display: block;
+    width: 460px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    margin-bottom: 37px;
+    box-sizing: border-box;  
+    
+    border-radius: 3px;
+}
+
+.write_us .gray_background {
+    width: 100%;
+
+    padding: 37px 80px;
+    box-sizing: border-box;
+}
+
+.form_write_us .button {
+    width: 460px;
+}
+
+.modal .modal_close {
+    position: absolute;
+    top: 16px;
+    right: 9px;
+
+    width: 21px;
+    height: 21px;
+
+    font-size: 0;
+
+    background-color: transparent;
+    background-image: url("../img/form-close.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border: 0;
+}
+
+.modal.map {
+    display: none;
+
+    width: 940px;
+    height: 446px;
+
+    margin-left: -470px;
+    margin-top: -223px;
+    box-sizing: border-box;
+
+    box-shadow: 0 0 16px 4px rgba(47, 42, 43, 0.5);
+}
+
+.map .modal_close {
+    top: 9px;
+}
+
+.modal.cart_success {
+    display: none;
+    
+    width: 620px;
+    height: 282px;
+    margin-left: -310px;
+    margin-top: -141px;
+    box-sizing: border-box;
+}
+
+.cart_success p {
+    margin-top: 70px;
+    margin-bottom: 62px;
+    margin-left: 178px;
+    margin-right: 124px;
+}
+
+.cart_success p::before {
+    content: "";
+
+    position: absolute;
+    top: 55px;
+    left: 81px;
+
+    width: 66px;
+    height: 66px;
+
+    background-image: url("../img/form-ok.svg")
+}
+
+.cart_success .gray_background {
+    font-size: 0;
+
+    padding: 37px 80px;
+}
+
+.cart_success .button {
+    font-size: 14px;
+}
+
+.cart_success .order {
+    margin-right: 20px;
 }
