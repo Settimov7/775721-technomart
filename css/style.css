@@ -2088,9 +2088,9 @@ html p,
     background-image: url("../img/checkbox-on-hover.svg");
 }
 
-.manufacturer_checkbox input[type="checkbox"] {
+/* .manufacturer_checkbox input[type="checkbox"] {
     display: none
-}
+} */
 
 /*  Временный костыль!
     При клике на checkbox появляется стандартный checkbox. visually_hidden не помогает.
@@ -2143,9 +2143,9 @@ html p,
     background-image: url("../img/radio-on-hover.svg");
 }
 
-.form_radio input[type="radio"] {
+/* .form_radio input[type="radio"] {
     display: none
-}
+} */
 
 /*  Временный костыль!
     Проблема описана выше.  */
