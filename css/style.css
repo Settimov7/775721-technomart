@@ -79,8 +79,8 @@ input[type="radio"].visually-hidden {
 }
 
 .search_form input[type="search"] {
-    min-width: 270px;
-    min-height: 42px;
+    width: 270px;
+    height: 42px;
     padding: 0;
     padding-left: 49px;
 
@@ -154,7 +154,7 @@ input[type="radio"].visually-hidden {
 .shopping a {
     position: relative;
 
-    max-width: 150px;
+    width: 150px;
     padding: 12px 21px;
     box-sizing: border-box;
 
@@ -894,13 +894,6 @@ body {
     min-width: 960px;
 }
 
-.main_header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* margin-bottom: 60px; */
-}
-
 .header_top {
     width: 100%;
     margin-bottom: 45px;
@@ -939,31 +932,37 @@ html p,
 
 .main_header .container.middle {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-content: space-between;
     margin-bottom: 42px;
 }
 
 .main_header .title {
-    max-width: 300px;
+    width: 300px;
     padding: 0px 50px;
     box-sizing: border-box;
+    margin-bottom: 40px;
 }
 
 .main_header .contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 270px;
+    width: 270px;
 }
 
 .main_header .phone {
     position: relative;
 
-    max-width: 270px;
+    display: block;
+    width: 270px;
     padding: 9px 42px;
     padding-left: 71px;
-    margin-bottom: 1px;
     box-sizing: border-box;
+}
+
+.main_header .adress {
+    display: block;
+
+    text-align: center;
 }
 
 .main_header .phone::before {
@@ -1127,32 +1126,31 @@ html p,
 }
 
 .main_navigation ul {
-    max-width: 940px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+
+    width: 940px;
+    margin: 0 auto;
     margin-bottom: 60px;
 }
 
 .main_navigation a {
     display: block;
-    padding: 19px 30px;
-    box-shadow: 0 5px 0 0 #293449;
+    padding: 21px 31px;
+    box-shadow: inset 0 -5px 0 0 #293449;
 }
 
 .navigation_item:first-child a {
-    padding-left: 52px;
+    padding-left: 50px;
 }
 
 .navigation_item:last-child a {
-    padding-right: 55px;
+    padding-right: 50px;
 }
 
 
 
 .promo_block {
-    display: flex;
-    flex-direction: column;
     margin-top: 59px;
     margin-bottom: 53px;
 }
@@ -1164,9 +1162,6 @@ html p,
 .promo_block .main_slider {
     position: relative;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
     width: 620px;
 }
 
@@ -1298,30 +1293,25 @@ html p,
     padding: 0px;
 }
 
-.promo_list.advantages {
-    display: flex;
-    flex-direction: column;
-}
-
 .promo_list.advantages li:first-child {
     margin-bottom: 20px;
 }
+
 .promo_list li {
     position: relative;
 
-    padding-top: 21px;
+    padding: 22px 0;
     padding-left: 22px;
     box-sizing: border-box;
 }
 
 .promo_list p {
-    margin-bottom: 12px;
+    margin-bottom: 11px;
 }
 
 .promo_list a {
     display: block;
     width: 135px;
-    margin-bottom: 22px;
     padding: 10px 0;
     box-sizing: border-box;
 
@@ -1599,17 +1589,38 @@ html p,
     padding-top: 63px;
 }
 
+.services .title {
+    margin-bottom: 35px;
+}
+
 .services_slider {
     display: flex;
     padding-bottom: 102px;
 }
 
 .services_description {
+    width: 400px;
     margin-bottom: 75px;
 }
 
 .services_list {
+    position: relative;
     margin-right: 80px;
+}
+
+.services_list::after {
+    content: "";
+
+    position: absolute;
+    top: -44px;
+    right: 0px;
+
+    width: 10px;
+    height: 272px;
+
+    background-image: url("../img/shadow.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .services_list .item {
@@ -1783,12 +1794,11 @@ html p,
 }
 
 .double_column .container {
-    display: flex;
-    flex-direction: column;
     padding: 0px;
 }
 
 .main_footer .logo {
+    display: block;
     width: 220px;
     padding: 20px 42px;
     margin-bottom: 35px;
@@ -1804,6 +1814,8 @@ html p,
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    width: 550px;
 }
 
 .navigation a {
@@ -1826,7 +1838,7 @@ html p,
 
 .main_footer .navigation {
     margin-top: 40px;
-    min-width: 550px;
+    width: 550px;
 }
 
 .footer_bottom {
@@ -1846,11 +1858,13 @@ html p,
     flex-wrap: wrap;
     justify-content: space-between;
     width: 132px;
+    margin-right: 120px;
 }
 
-.social li {
+.social a {
     position: relative;
 
+    display: block;
     width: 41px;
     height: 41px;
 
@@ -1904,18 +1918,20 @@ html p,
     background-position: 0 0;
 }
 
-.social li:hover,
-.social li:focus,
-.social li:active {
+.social a:hover,
+.social a:focus,
+.social a:active {
     background-color: #ee3643;
 }
 
 .copyright {
     width: 230px;
+    margin-right: 160px;
 }
 
 .feedback {
     width: 140px;
+    margin-right: 50px;
 }
 
 .developed_by {
