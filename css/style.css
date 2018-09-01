@@ -185,7 +185,10 @@ input[type="radio"].visually-hidden {
     color: #ffffff;
 }
 
-.shopping a:first-child,
+.shopping a:first-child {
+    padding-left: 45px;
+}
+
 .shopping a:nth-child(2) {
     padding-left: 50px;
 }
@@ -263,6 +266,13 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
     font-style: italic;
     color: #ee3643;
+
+    width: 300px;
+    padding: 4px 53px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-bottom: 35px;
+    margin-right: 20px;
 }
 
 .contacts .phone {
@@ -290,6 +300,13 @@ input[type="radio"].visually-hidden {
 .user_profile .user_name {
     font-size: 21px;
     line-height: 21px;
+
+    position: relative;
+
+    padding: 12px 0px;
+    padding-left: 45px;
+    padding-right: 15px;
+    margin-bottom: 7px;
 }
 
 .main_navigation a {
@@ -459,6 +476,7 @@ input[type="radio"].visually-hidden {
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
+    text-transform: uppercase;
     color: #ffffff;
 }
 
@@ -497,7 +515,7 @@ input[type="radio"].visually-hidden {
     color: #32425c;
 }
 
-.product_title {
+.product .title {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 20px;
@@ -595,6 +613,15 @@ input[type="radio"].visually-hidden {
     color: #ffffff;
 
     background-color: #32425c;
+
+    display: inline-block;
+    width: 240px;
+    padding: 16px 0;
+    padding-left: 23px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+    text-align: left;
 }
 
 .services_list .current {
@@ -641,6 +668,15 @@ input[type="radio"].visually-hidden {
     color: #ffffff;
 
     background-color: #ee3643;
+
+    display: block;
+    width: 220px;
+    padding: 17px 42px;
+    margin-bottom: 32px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: 0 5px 0 0 #b52933;
+            box-shadow: 0 5px 0 0 #b52933;
 }
 
 .main_footer .footer_contacts {
@@ -912,6 +948,10 @@ input[type="radio"].visually-hidden {
     color: #000000;
 
     background-color: #f2f6f8;
+
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 70px;
 }
 
 .cart_success p {
@@ -985,16 +1025,9 @@ html p,
         align-content: space-between;
 }
 
-.main_header .title {
-    width: 300px;
-    padding: 0px 50px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    margin-bottom: 40px;
-}
-
 .main_header .contacts {
     width: 270px;
+    margin-right: 50px;
 }
 
 .main_header .phone {
@@ -1004,6 +1037,7 @@ html p,
     width: 270px;
     padding: 9px 42px;
     padding-left: 71px;
+    margin-bottom: 5px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
@@ -1050,7 +1084,7 @@ html p,
 
 .user_navigation_button {
     display: block;
-    padding: 10px 25px;
+    padding: 14px 25px;
     margin-right: 10px;
 }
 
@@ -1068,7 +1102,7 @@ html p,
 
     position: absolute;
     left: 14px;
-    top: 12px;
+    top: 16px;
 
     width: 20px;
     height: 17px;
@@ -1085,15 +1119,6 @@ html p,
 
 .user_navigation_button.login:active::before {
     background-image: url("../img/icon-login-gray.svg");
-}
-
-.user_profile .user_name {
-    position: relative;
-
-    padding: 12px 0px;
-    padding-left: 50px;
-    padding-right: 15px;
-    margin-bottom: 7px;
 }
 
 .user_profile .user_name::before {
@@ -1124,7 +1149,7 @@ html p,
 .user_profile .logout {
     position: relative;
 
-    padding: 12px 22px;
+    padding: 12px 26px;
     margin-bottom: 7px;
 
     background-color: #ffffff;
@@ -1155,7 +1180,7 @@ html p,
 }
 
 .user_navigation .navigation_list {
-    margin-right: 65px;
+    margin-right: 74px;
 }
 
 .user_navigation_item:first-child {
@@ -1588,10 +1613,14 @@ html p,
 }
 
 .product_title .title {
-    margin: 30px 15px;
+    margin: 25px 15px;
     margin-bottom: 40px;
 
     text-align: center;
+}
+
+.catalog .title {
+    margin-top: 20px;
 }
 
 .product .old_price {
@@ -1603,11 +1632,11 @@ html p,
 .product .price {
     position: relative;
 
-    width: 123px;
+    width: 141px;
     min-height: 38px;
-    margin-left: 50px;
+    margin-left: 43px;
     margin-bottom: 21px;
-    padding-top: 10px;
+    padding-top: 8px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border-radius: 3px;
@@ -1694,7 +1723,7 @@ html p,
 }
 
 .services .title {
-    margin-bottom: 35px;
+    margin-bottom: 28px;
 }
 
 .services_slider {
@@ -1706,7 +1735,7 @@ html p,
 
 .services_description {
     width: 400px;
-    margin-bottom: 75px;
+    margin-bottom: 65px;
 }
 
 .services_list {
@@ -1729,17 +1758,6 @@ html p,
     background-position: 0 0;
 }
 
-.services_list .item {
-    display: inline-block;
-    width: 240px;
-    padding: 15px 0;
-    padding-left: 23px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-
-    text-align: left;
-}
-
 .services_slider .description_list {
     position: relative;
 
@@ -1748,7 +1766,9 @@ html p,
 }
 
 .description_slide .title {
-    margin-bottom: 28px;
+    margin-bottom: 26px;
+
+    text-transform: uppercase;
 }
 
 .description_slide {
@@ -1834,17 +1854,17 @@ html p,
 }
 
 .about_company .title {
-    margin-bottom: 35px;
+    margin-bottom: 27px;
 }
 
 .about_company p {
-    margin-bottom: 30px;
+    margin-bottom: 23px;
 }
 
 .transport_companies_list p {
     position: relative;
 
-    padding-left: 40px;
+    padding-left: 36px;
     margin-bottom: 20px;
 }
 
@@ -1876,7 +1896,7 @@ html p,
 }
 
 .main_contacts .title {
-    margin-bottom: 35px;
+    margin-bottom: 27px;
 }
 
 .main_contacts p {
@@ -1884,7 +1904,7 @@ html p,
 }
 
 .main_contacts img {
-    margin-bottom: 62px;
+    margin-bottom: 28px;
 }
 
 .main_contacts .button {
@@ -1909,17 +1929,6 @@ html p,
 
 .double_column .container {
     padding: 0px;
-}
-
-.main_footer .logo {
-    display: block;
-    width: 220px;
-    padding: 20px 42px;
-    margin-bottom: 35px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    -webkit-box-shadow: 0 5px 0 0 #b52933;
-            box-shadow: 0 5px 0 0 #b52933;
 }
 
 .footer_contacts {
@@ -1953,7 +1962,7 @@ html p,
 }
 
 .footer_navigation_item:first-child {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 
@@ -2055,7 +2064,7 @@ html p,
 }
 
 .copyright {
-    width: 230px;
+    min-width: 230px;
     margin-right: 160px;
 }
 
@@ -2084,6 +2093,10 @@ html p,
     margin-right: 40px;
 }
 
+.breadcrumbs li:first-child {
+    margin-right: 55px;
+}
+
 .breadcrumbs li::before {
     content: "";
 
@@ -2110,11 +2123,11 @@ html p,
 }
 
 .breadcrumbs li:nth-child(2)::before {
-    left: -15px;
+    left: -25px;
 }
 
 .catalog_title {
-    padding: 30px; 
+    padding: 27px; 
     margin-bottom: 20px;
 }
 
@@ -2132,7 +2145,7 @@ html p,
 }
 
 .catalog_filter .title {
-    padding: 10px 19px;
+    padding: 11px 19px;
     margin-bottom: 12px;
 }
 
@@ -2223,7 +2236,7 @@ html p,
 
 .form_filter fieldset:last-of-type {
     padding: 0;
-    margin-bottom: 64px;
+    margin-bottom: 76px;
 
     border: none;
 }
@@ -2239,7 +2252,11 @@ html p,
 }
 
 .form_filter .filter_option {
-    margin-bottom: 17px;
+    margin-bottom: 21px;
+}
+
+.form_filter .filter_option:last-child {
+    margin: 0;
 }
 
 .manufacturer_checkbox input[type="checkbox"] + .checkbox_indicator {
@@ -2347,7 +2364,7 @@ html p,
     Проблема описана выше.  */
 
 .catalog_sort .title {
-    padding: 10px 19px;
+    padding: 11px 19px;
 }
 
 .catalog_sort {
@@ -2424,7 +2441,7 @@ html p,
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
 }
 
 .catalog .product {
@@ -2443,7 +2460,7 @@ html p,
     display: block;
     min-width: 38px;
     padding: 10px 0;
-    margin-right: 10px;
+    margin-right: 9px;
     text-align: center;
 
     border-radius: 3px;
@@ -2454,14 +2471,8 @@ html p,
     margin: 0;
 }
 
-.category_description {
-    width: 100%;
-    padding-top: 64px;
-    padding-bottom: 73px;
-}
-
 .category_description .title {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 .modal {
