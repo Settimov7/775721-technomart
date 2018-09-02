@@ -438,32 +438,22 @@ input[type="radio"].visually_hidden {
 
 .promo_list a:hover,
 .promo_list a:focus {
-    color: #ffffff;
-
     background-color: rgba(0, 0, 0, 0.2);
 }
 
 .promo_list a:active {
-    color: #ffffff;
-
     background-color: rgba(0, 0, 0, 0.3);
 }
 
 .categories li:first-child {
-    color: #ffffff;
-
     background-color: #ffbf47;
 }
 
 .categories li:nth-child(2) {
-    color: #ffffff;
-
     background-color: #3bbce3;
 }
 
 .categories li:last-child {
-    color: #ffffff;
-
     background-color: #dc91d8;
 }
 
@@ -491,14 +481,10 @@ input[type="radio"].visually_hidden {
 }
 
 .advantages li:first-child {
-    color: #ffffff;
-
     background-color: #8ed78f;
 }
 
 .advantages li:last-child {
-    color: #ffffff;
-
     background-color: #ffc047;
 }
 
@@ -1728,6 +1714,7 @@ html p,
     width: 100%;
     margin-bottom: 77px;
     padding-top: 63px;
+    padding-bottom: 102px;
 }
 
 .services .title {
@@ -1738,7 +1725,6 @@ html p,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-bottom: 102px;
 }
 
 .services_description {
@@ -1933,6 +1919,8 @@ html p,
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+
+    padding-bottom: 50px;
 }
 
 .double_column .container {
@@ -1990,7 +1978,6 @@ html p,
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: 50px;
     padding-top: 35px;
     padding-bottom: 30px;
 }
