@@ -46,6 +46,8 @@ input[type="radio"].visually_hidden {
     font-weight: 400;
     color: #000000;
 
+    padding-bottom: 60px;
+
     background-color: #f3f7f9;
 }
 
@@ -68,14 +70,14 @@ input[type="radio"].visually_hidden {
             box-shadow: 0 5px 0 0 #b52933;
 }
 
-.header_top .logo:hover,
-.header_top .logo:focus {
+.header_top .logo[href*="index"]:hover,
+.header_top .logo[href*="index"]:focus {
     color: #ffffff;
 
     background-color: #ca2c37;
 }
 
-.header_top .logo:active {
+.header_top .logo[href*="index"]:active {
     color: #ffffff;
 
     background-color: #ba2732;
@@ -1211,7 +1213,6 @@ html p,
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 940px;
-    margin-bottom: 60px;
 }
 
 .main_navigation a {
