@@ -1583,9 +1583,13 @@ html p,
     display: block;
 }
 
+.product_title:focus ~ .product_actions {
+    display: block;
+}
+
 .product:hover {
     -webkit-box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
-            box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5)
+            box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .product_actions .buy:hover::before,
