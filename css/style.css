@@ -187,6 +187,10 @@ input[type="radio"].visually_hidden {
     color: #ffffff;
 }
 
+.shopping .active {
+    background-color: #ee3643;
+}
+
 .shopping a:first-child {
     padding-left: 45px;
 }
@@ -676,7 +680,7 @@ input[type="radio"].visually_hidden {
 }
 
 .footer_contacts .phone {
-    color: transparent;
+    color: #f3f7f9;;
 }
 
 .navigation .item {
@@ -2477,11 +2481,45 @@ html p,
     margin-bottom: 25px;
 }
 
+@keyframes bounce {
+    0% {
+        transform: translateY(-2000px);
+    }
+
+    70% {
+        transform: translateY(30px);
+    }
+
+    90% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+  
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-10px);
+    }
+  
+    20%, 40%, 60%, 80% {
+      transform: translateX(10px);
+    }
+}
+
 .modal {
     position: fixed;
     z-index: 2;
     top: 50%;
     left: 50%;
+
+    display: none;
 
     color: #000000;
 
@@ -2493,8 +2531,6 @@ html p,
 }
 
 .modal.write_us {
-    display: none;
-
     width: 620px;
     height: 430px;
     margin-left: -310px;
@@ -2557,6 +2593,7 @@ html p,
     position: absolute;
     top: 16px;
     right: 9px;
+    z-index: 2;
 
     width: 21px;
     height: 21px;
@@ -2570,9 +2607,17 @@ html p,
     border: 0;
 }
 
-.modal.map {
-    display: none;
+.modal_show {
+    display: block;
+    animation: bounce 0.6s;
+}
 
+.modal_error {
+    animation: shake 0.5s;
+}
+
+
+.modal.map {
     width: 940px;
     height: 446px;
 
@@ -2587,12 +2632,23 @@ html p,
 }
 
 .map .modal_close {
-    top: 9px;
+    top: -30px;
 }
 
-.modal.cart_success {
-    display: none;
+.map iframe {
+    position: relative;
+    z-index: 2;
 
+    border: none;
+}
+
+.map img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+}
+.modal.cart_success {
     width: 620px;
     height: 282px;
     margin-left: -310px;
