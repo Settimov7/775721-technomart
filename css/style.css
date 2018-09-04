@@ -614,6 +614,7 @@ input[type="radio"].visually_hidden {
             box-sizing: border-box;
 
     text-align: left;
+    vertical-align: middle;
 }
 
 .services_list .current {
