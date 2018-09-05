@@ -34,25 +34,6 @@ var servicesNavigation = servicesSlider.querySelector(".services_list");
 var servicesNavigationItems = servicesNavigation.querySelectorAll(".item");
 var currentServicesSlideIndex = 0;
 
-for (var i = 0; i < servicesNavigationItems.length; i++) {
-  servicesNavigationItems[i].addEventListener("click", function(evt) {
-    evt.preventDefault();
-
-    var indexClick = 0;
-    for(var j = 0; j < servicesNavigationItems.length; j++) {
-      if(this === servicesNavigationItems[j]) {
-        indexClick = j;
-      }
-    }
-
-    allservicesSlides[currentServicesSlideIndex].classList.remove("active");
-    servicesNavigationItems[currentServicesSlideIndex].classList.remove("current");
-    currentServicesSlideIndex = indexClick;
-    allservicesSlides[currentServicesSlideIndex].classList.add("active");
-    servicesNavigationItems[currentServicesSlideIndex].classList.add("current");
-  });
-}
-
 try {
   storageName = localStorage.getItem("name");
   storageEmail = localStorage.getItem("email");
@@ -168,9 +149,23 @@ for (var i = 0; i < sliderNavigationPoints.length; i++) {
     evt.preventDefault();
     allMainSlides[currentSlideIndex].classList.remove("active");
     sliderNavigationPoints[currentSlideIndex].classList.remove("active");
-    currentSlideIndex = parseInt(this.innerText) - 1;
+    currentSlideIndex = parseInt(evt.target.innerText) - 1;
     allMainSlides[currentSlideIndex].classList.add("active");
     sliderNavigationPoints[currentSlideIndex].classList.add("active");
+  });
+}
+
+for (var i = 0; i < servicesNavigationItems.length; i++) {
+  servicesNavigationItems[i].addEventListener("click", function(evt) {
+    evt.preventDefault();
+
+    var indexClick = Array.from(servicesNavigationItems).indexOf(evt.target);
+
+    allservicesSlides[currentServicesSlideIndex].classList.remove("active");
+    servicesNavigationItems[currentServicesSlideIndex].classList.remove("current");
+    currentServicesSlideIndex = indexClick;
+    allservicesSlides[currentServicesSlideIndex].classList.add("active");
+    servicesNavigationItems[currentServicesSlideIndex].classList.add("current");
   });
 }
 
