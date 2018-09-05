@@ -2488,19 +2488,11 @@ html p,
 
 @keyframes bounce {
     0% {
-        transform: translateY(-2000px);
-    }
-
-    70% {
-        transform: translateY(30px);
-    }
-
-    90% {
-        transform: translateY(-10px);
+        transform: translateX(1000px);
     }
 
     100% {
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
 
@@ -2523,16 +2515,14 @@ html p,
     z-index: 2;
     top: 50%;
     left: 50%;
-
     display: none;
 
     color: #000000;
 
     background-color: #ffffff;
-    -webkit-box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
-            box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: inset 0 7px 0 0 #ff5257;
-            box-shadow: inset 0 7px 0 0 #ff5257;
+    box-shadow: 
+        0 20px 40px 0 rgba(0, 0, 0, 0.75),
+        inset 0 7px 0 0 #ff5257;
 }
 
 .modal.write_us {
@@ -2542,6 +2532,7 @@ html p,
     margin-top: -215px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+            /* Добавить тень */
 }
 
 .form_write_us .form_fields {
@@ -2614,7 +2605,7 @@ html p,
 
 .modal_show {
     display: block;
-    animation: bounce 0.6s;
+    animation: bounce 0.4s;
 }
 
 .modal_error {
@@ -2625,7 +2616,6 @@ html p,
 .modal.map {
     width: 940px;
     height: 446px;
-
     margin-left: -470px;
     margin-top: -223px;
     -webkit-box-sizing: border-box;
