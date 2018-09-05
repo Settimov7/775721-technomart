@@ -390,7 +390,6 @@ input[type="radio"].visually_hidden {
 .button {
     display: inline-block;
     width: 220px;
-    /* height: 38px; */
     padding: 10px 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -2305,14 +2304,6 @@ html p,
     background-image: url("../img/checkbox-on-hover.svg");
 }
 
-/* .manufacturer_checkbox input[type="checkbox"] {
-    display: none
-} */
-
-/*  Временный костыль!
-    При клике на checkbox появляется стандартный checkbox. visually_hidden не помогает.
-    Поэтому убрал с помощью display: none. Как можно его скрыть подругому?  */
-
 .form_filter .form_radio {
     position: relative;
 
@@ -2360,12 +2351,6 @@ html p,
     background-image: url("../img/radio-on-hover.svg");
 }
 
-/* .form_radio input[type="radio"] {
-    display: none
-} */
-
-/*  Временный костыль!
-    Проблема описана выше.  */
 
 .catalog_sort .title {
     padding: 11px 19px;
@@ -2442,9 +2427,6 @@ html p,
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    /* -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; */
     margin-bottom: 28px;
 }
 
@@ -2532,7 +2514,6 @@ html p,
     margin-top: -215px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-            /* Добавить тень */
 }
 
 .form_write_us .form_fields {
