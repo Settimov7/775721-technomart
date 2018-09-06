@@ -1550,12 +1550,11 @@ html p,
     top: 0;
     left: 0;
 
-    display: none;
-
-    width: 220px;
+    width: 218px;
     height: 150px;
 
     background-color: #ffffff;
+    opacity: 0;
 }
 
 .product_actions .buy {
@@ -1580,11 +1579,15 @@ html p,
 }
 
 .product:hover .product_actions {
-    display: block;
-}
+    opacity: 1;
+} 
 
 .product_title:focus ~ .product_actions {
-    display: block;
+    opacity: 1;
+}
+
+.product_actions:focus {
+    opacity: 1;
 }
 
 .product:hover {
