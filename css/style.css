@@ -1863,6 +1863,10 @@ html p,
     margin-bottom: 23px;
 }
 
+.about_company p:nth-of-type(2) {
+    margin-bottom: 0;
+}
+
 .transport_companies_list p {
     position: relative;
 
@@ -1902,6 +1906,7 @@ html p,
 }
 
 .main_contacts p {
+    width: 180px;
     margin-bottom: 35px;
 }
 
