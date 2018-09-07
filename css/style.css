@@ -2108,7 +2108,7 @@ html p,
     margin-right: 55px;
 }
 
-.breadcrumbs li::before {
+.breadcrumbs li:not(:first-child)::before {
     content: "";
 
     position: absolute;
@@ -2123,7 +2123,10 @@ html p,
     background-position: 0 0;
 }
 
-.breadcrumbs li:first-child::before {
+.breadcrumbs_item:first-child .breadcrumbs_link::before {
+    content: "";
+
+    position: absolute;
     top: 5px;
     left: 0;
 
@@ -2268,6 +2271,16 @@ html p,
 
 .form_filter .filter_option:last-child {
     margin: 0;
+}
+
+.form_filter .button:hover,
+.form_filter .button:focus {
+    border-color: #bdc6ca;
+}
+
+.form_filter .button:active {
+    border-color: #ee3643;
+    outline: none;
 }
 
 .manufacturer_checkbox input[type="checkbox"] + .checkbox_indicator {
