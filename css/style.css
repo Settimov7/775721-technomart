@@ -67,13 +67,16 @@ input[type="radio"].visually_hidden {
 }
 
 .header_top .logo[href*="index"]:hover,
-.header_top .logo[href*="index"]:focus {
+.header_top .logo[href*="index"]:focus, 
+.main_footer .logo[href*="index"]:hover,
+.main_footer .logo[href*="index"]:focus {
     color: #ffffff;
 
     background-color: #ca2c37;
 }
 
-.header_top .logo[href*="index"]:active {
+.header_top .logo[href*="index"]:active,
+.main_footer .logo[href*="index"]:active {
     color: #ffffff;
 
     background-color: #ba2732;
